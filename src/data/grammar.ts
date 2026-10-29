@@ -1,6 +1,7 @@
 import { GrammarItem } from '@/types';
 
 export const GRAMMAR_LIBRARY: GrammarItem[] = [
+  // --- BÀI 1 ---
   {
     id: 'g-01',
     pattern: 'N1 は N2 です',
@@ -12,11 +13,13 @@ export const GRAMMAR_LIBRARY: GrammarItem[] = [
     examples: [
       { japanese: 'わたし は ベトナムじん です。', kana: 'わたしはべとなむじんです。', romaji: 'Watashi wa betonamujin desu.', vietnamese: 'Tôi là người Việt Nam.' },
       { japanese: 'ミラーさん は アメリカじん です。', kana: 'みらーさんはあめりかじんです。', romaji: 'Miraa-san wa amerikajin desu.', vietnamese: 'Anh Miller là người Mỹ.' },
+      { japanese: 'たなかさん は せんせい です。', kana: 'たなかさんはせんせいです。', romaji: 'Tanaka-san wa sensei desu.', vietnamese: 'Anh Tanaka là giáo viên.' },
     ],
     commonMistakes: [
       'Gõ chữ "わ" thay vì chữ "は". Khi làm trợ từ, bắt buộc phải viết chữ は.',
+      'Tự thêm さん vào tên của mình: "わたしはナムさんです" - Rất bất lịch sự! さん chỉ dùng cho người khác.',
     ],
-    distinctions: 'Phân biệt với trợ từ が: は nhấn mạnh vế sau (nói về N1 thì...), còn が nhấn mạnh chính danh từ đứng trước.',
+    distinctions: 'Phân biệt với trợ từ が: は nhấn mạnh vế thông tin ở sau (nói về N1 thì...), còn が nhấn mạnh chính danh từ đứng trước.',
     lessonId: 'minna-bai-1-tu-gioi-thieu',
     jlptLevel: 'N5',
   },
@@ -31,6 +34,7 @@ export const GRAMMAR_LIBRARY: GrammarItem[] = [
     examples: [
       { japanese: 'サントスさん は がくせい じゃありません。', kana: 'さんとすさんはがくせいじゃありません。', romaji: 'Santosu-san wa gakusei ja arimasen.', vietnamese: 'Anh Santos không phải là học sinh.' },
       { japanese: 'あれ は わたし の かばん ではありません。', kana: 'あれはわたしのかばんではありません。', romaji: 'Are wa watashi no kaban dewa arimasen.', vietnamese: 'Kia không phải là cặp sách của tôi.' },
+      { japanese: 'わたし は いしゃ じゃありません。', kana: 'わたしはいしゃじゃありません。', romaji: 'Watashi wa isha ja arimasen.', vietnamese: 'Tôi không phải là bác sĩ.' },
     ],
     commonMistakes: [
       'Nói "N2 ですありません" - Sai cấu trúc! Không có dạng này trong ngữ pháp tiếng Nhật.',
@@ -49,6 +53,7 @@ export const GRAMMAR_LIBRARY: GrammarItem[] = [
     examples: [
       { japanese: 'あなた は がくせい ですか。', kana: 'あなたはがくせいですか。', romaji: 'Anata wa gakusei desu ka.', vietnamese: 'Bạn có phải là học sinh không?' },
       { japanese: 'はい、がくせい です。', kana: 'はい、がくせいです。', romaji: 'Hai, gakusei desu.', vietnamese: 'Vâng, tôi là học sinh.' },
+      { japanese: 'あのひと は だれ ですか。', kana: 'あのひとはだれですか。', romaji: 'Ano hito wa dare desu ka.', vietnamese: 'Người kia là ai vậy?' },
     ],
     commonMistakes: [
       'Trả lời cụt lủn "はい、そうですか" - Sai! "そうですか" mang nghĩa là "thế à", còn đồng ý phải là "はい、そうです".',
@@ -67,16 +72,20 @@ export const GRAMMAR_LIBRARY: GrammarItem[] = [
     examples: [
       { japanese: 'わたし も ベトナムじん です。', kana: 'わたしもべとなむじんです。', romaji: 'Watashi mo betonamujin desu.', vietnamese: 'Tôi cũng là người Việt Nam.' },
       { japanese: 'これ は たなかさん の ほん です。', kana: 'これはたなかさんのほんです。', romaji: 'Kore wa Tanaka-san no hon desu.', vietnamese: 'Đây là sách của anh Tanaka.' },
+      { japanese: 'さくらだいがく の がくせい です。', kana: 'さくらだいがくのがくせいです。', romaji: 'Sakura daigaku no gakusei desu.', vietnamese: 'Tôi là sinh viên trường đại học Sakura.' },
     ],
     commonMistakes: [
       'Dùng cả "は" lẫn "も" cùng một chỗ: "わたしはも" - Sai! "も" đã thay thế hoàn toàn cho "は".',
+      'Viết ngược trật tự tiếng Việt: Muốn nói "Sách tiếng Nhật" lại viết "ほんの日本語" (Sai) -> phải là "日本語の本".',
     ],
     lessonId: 'minna-bai-1-tu-gioi-thieu',
     jlptLevel: 'N5',
   },
+
+  // --- BÀI 2 ---
   {
     id: 'g-05',
-    pattern: 'これ / それ / あれ / どれ',
+    pattern: 'これ / それ / あれ / どれ は N です',
     title: 'Đại từ chỉ định đồ vật: Cái này, cái đó, cái kia',
     meaning: 'Chỉ định vị trí đồ vật theo khoảng cách người nói - người nghe',
     vietnameseExplanation: 'これ: Đồ ở gần người nói. それ: Đồ ở gần người nghe. あれ: Đồ ở xa cả người nói lẫn người nghe. どれ: Từ để hỏi (cái nào).',
@@ -85,9 +94,10 @@ export const GRAMMAR_LIBRARY: GrammarItem[] = [
     examples: [
       { japanese: 'これ は なんですか。', kana: 'これはなんですか。', romaji: 'Kore wa nan desu ka.', vietnamese: 'Cái này là cái gì thế?' },
       { japanese: 'それ は にほんの おちゃ です。', kana: 'それはにほんのおちゃです。', romaji: 'Sore wa nihon no ocha desu.', vietnamese: 'Đó là trà Nhật Bản.' },
+      { japanese: 'あれ は じどうしゃの かぎ です。', kana: 'あれはじどうしゃのかぎです。', romaji: 'Are wa jidousha no kagi desu.', vietnamese: 'Kia là chìa khóa xe ô tô.' },
     ],
     commonMistakes: [
-      'Nhầm với この/その/あの: Sau これ KHÔNG ĐƯỢC có danh từ ngay phía sau.',
+      'Nhầm với この/その/あの: Sau これ KHÔNG ĐƯỢC có danh từ ngay phía sau ("これほん" là sai!).',
     ],
     lessonId: 'minna-bai-2-do-vat-xung-quanh',
     jlptLevel: 'N5',
@@ -102,6 +112,8 @@ export const GRAMMAR_LIBRARY: GrammarItem[] = [
     whenToUse: 'Khi muốn nói cụ thể "chiếc áo này", "cuốn sách kia", "người đó".',
     examples: [
       { japanese: 'この ほん は おもしろい です。', kana: 'このほんはおもしろいです。', romaji: 'Kono hon wa omoshiroi desu.', vietnamese: 'Quyển sách này thú vị.' },
+      { japanese: 'その かさ は だれのですか。', kana: 'そのかさはだれのですか。', romaji: 'Sono kasa wa dare no desu ka.', vietnamese: 'Chiếc ô đó là của ai vậy?' },
+      { japanese: 'あの ひとは たなかさん です。', kana: 'あのひとはたなかさんです。', romaji: 'Ano hito wa Tanaka-san desu.', vietnamese: 'Người kia là anh Tanaka.' },
     ],
     commonMistakes: [
       'Dùng "この は わたしの です" - Sai! Phải là "これ は わたしの です" hoặc "このほん は わたしの です".',
@@ -109,6 +121,8 @@ export const GRAMMAR_LIBRARY: GrammarItem[] = [
     lessonId: 'minna-bai-2-do-vat-xung-quanh',
     jlptLevel: 'N5',
   },
+
+  // --- BÀI 3 ---
   {
     id: 'g-07',
     pattern: 'ここ / そこ / あそこ / どこ',
@@ -120,13 +134,35 @@ export const GRAMMAR_LIBRARY: GrammarItem[] = [
     examples: [
       { japanese: 'うけつけ は どこ ですか。', kana: 'うけつけはどこですか。', romaji: 'Uketsuke wa doko desu ka.', vietnamese: 'Quầy lễ tân ở đâu vậy ạ?' },
       { japanese: 'あそこ です。', kana: 'あそこです。', romaji: 'Asoko desu.', vietnamese: 'Ở đằng kia ạ.' },
+      { japanese: 'お手洗い は こちら です。', kana: 'おてあらいはどちらです。', romaji: 'Otearai wa kochira desu.', vietnamese: 'Nhà vệ sinh ở phía này ạ.' },
     ],
     commonMistakes: [
-      'Dùng これ khi muốn chỉ địa điểm.',
+      'Dùng これ khi muốn chỉ địa điểm ("これ は きょうしつ です" thay vì "ここ は きょうしつ です").',
     ],
     lessonId: 'minna-bai-3-noi-chon-mua-sam',
     jlptLevel: 'N5',
   },
+  {
+    id: 'g-07b',
+    pattern: 'N は いくら ですか',
+    title: 'Hỏi giá tiền: N giá bao nhiêu?',
+    meaning: 'Hỏi giá của một món hàng',
+    vietnameseExplanation: 'いくら là đại từ nghi vấn chuyên dùng để hỏi giá tiền trong tiếng Nhật. Trả lời bằng số tiền + 円 (えん) + です.',
+    formationRules: ['N + は + いくら ですか。'],
+    whenToUse: 'Dùng khi đi mua sắm tại chợ, siêu thị, nhà hàng tại Nhật.',
+    examples: [
+      { japanese: 'この カメラ は いくら ですか。', kana: 'このかめらはいくらですか。', romaji: 'Kono kamera wa ikura desu ka.', vietnamese: 'Chiếc máy ảnh này giá bao nhiêu?' },
+      { japanese: '２万５千円 です。', kana: 'にまんごせんえんです。', romaji: 'Niman gosen-en desu.', vietnamese: 'Giá 25.000 Yên.' },
+      { japanese: 'この りんご は ひとつ いくら ですか。', kana: 'このりんごはひとついくらですか。', romaji: 'Kono ringo wa hitotsu ikura desu ka.', vietnamese: 'Táo này bao nhiêu tiền một quả?' },
+    ],
+    commonMistakes: [
+      'Đếm tiền hàng vạn (万 - man) theo tư duy nghìn tiếng Việt (Ví dụ 10.000 yên người Nhật nói là 1 vạn: いちまんえん).',
+    ],
+    lessonId: 'minna-bai-3-noi-chon-mua-sam',
+    jlptLevel: 'N5',
+  },
+
+  // --- BÀI 4 ---
   {
     id: 'g-08',
     pattern: 'V-ます / V-ません / V-ました / V-ませんでした',
@@ -143,6 +179,7 @@ export const GRAMMAR_LIBRARY: GrammarItem[] = [
     examples: [
       { japanese: 'まいあさ ６じ に おきます。', kana: 'まいあさろくじにおきます。', romaji: 'Maiasa rokuji ni okimasu.', vietnamese: 'Mỗi sáng tôi thức dậy lúc 6 giờ.' },
       { japanese: 'きのう べんきょうしませんでした。', kana: 'きのうべんきょうしませんでした。', romaji: 'Kinou benkyoushimasen deshita.', vietnamese: 'Hôm qua tôi đã không học bài.' },
+      { japanese: 'あした はたらきますか。', kana: 'あしたはたらきますか。', romaji: 'Ashita hatarakimasu ka.', vietnamese: 'Ngày mai bạn có đi làm không?' },
     ],
     commonMistakes: [
       'Dùng ます sau tính từ (ví dụ: たかい ます - Sai hoàn toàn!).',
@@ -156,10 +193,12 @@ export const GRAMMAR_LIBRARY: GrammarItem[] = [
     title: 'Trợ từ に chỉ mốc thời gian diễn ra hành động',
     meaning: 'Làm việc gì vào thời điểm nào',
     vietnameseExplanation: 'Trợ từ に đi sau các từ chỉ thời gian CÓ CHỨA CON SỐ cụ thể (giờ, ngày, tháng, năm).',
-    formationRules: ['Mốc thời gian cụ thể + に + Động từ'],
+    formationRules: ['Mốc thời gian cụ thể (chứa số) + に + Động từ'],
     whenToUse: 'Nói giờ thức dậy, giờ tàu chạy, ngày sinh nhật, năm đi du học.',
     examples: [
       { japanese: '７じはん に あさごはん を たべます。', kana: 'しちじはんにあさごはんをたべます。', romaji: 'Shichijihan ni asagohan o tabemasu.', vietnamese: 'Tôi ăn sáng vào lúc 7 giờ rưỡi.' },
+      { japanese: '１２月２５日 に パーティー を します。', kana: 'じゅうにがつにじゅうごにちにぱーてぃーをします。', romaji: 'Juunigatsu nijuugonichi ni paatii o shimasu.', vietnamese: 'Chúng tôi tổ chức tiệc vào ngày 25 tháng 12.' },
+      { japanese: '何時 に 寝ますか。', kana: 'なんじにねますか。', romaji: 'Nanji ni nemasu ka.', vietnamese: 'Bạn đi ngủ lúc mấy giờ?' },
     ],
     commonMistakes: [
       'Thêm に sau các từ thời gian tương đối: きょう に, あした に, まいにち に -> Sai! Tuyệt đối không thêm に sau các từ này.',
@@ -177,6 +216,8 @@ export const GRAMMAR_LIBRARY: GrammarItem[] = [
     whenToUse: 'Nói giờ làm việc, giờ học, cự ly quãng đường tàu chạy.',
     examples: [
       { japanese: 'ぎんこう は ９じ から ３じ まで です。', kana: 'ぎんこうはくじからさんじまでです。', romaji: 'Ginkou wa kuji kara sanji made desu.', vietnamese: 'Ngân hàng mở cửa từ 9 giờ đến 3 giờ.' },
+      { japanese: 'ハノイ から とうきょう まで 飛行機 で ５時間 です。', kana: 'はのいからとうきょうまでひこうきでごじかんです。', romaji: 'Hanoi kara Toukyou made hikouki de gojikan desu.', vietnamese: 'Từ Hà Nội đến Tokyo đi máy bay mất 5 tiếng.' },
+      { japanese: '月曜日 から 金曜日 まで 働きます。', kana: 'げつようびからきんようびまではたらきます。', romaji: 'Getsuyoubi kara kinyoubi made hatarakimasu.', vietnamese: 'Tôi làm việc từ thứ hai đến thứ sáu.' },
     ],
     commonMistakes: [
       'Quên động từ hoặc です ở cuối câu.',
@@ -184,6 +225,8 @@ export const GRAMMAR_LIBRARY: GrammarItem[] = [
     lessonId: 'minna-bai-4-thoi-gian-dong-tu',
     jlptLevel: 'N5',
   },
+
+  // --- BÀI 5 ---
   {
     id: 'g-11',
     pattern: 'N(địa điểm) へ 行きます / 来ます / 帰ります',
@@ -194,9 +237,11 @@ export const GRAMMAR_LIBRARY: GrammarItem[] = [
     whenToUse: 'Nói kế hoạch đi công tác, du lịch, về nhà.',
     examples: [
       { japanese: 'らいしゅう 日本 へ いきます。', kana: 'らいしゅうにほんへいきます。', romaji: 'Raishuu nihon e ikimasu.', vietnamese: 'Tuần sau tôi đi Nhật Bản.' },
+      { japanese: '友達 が うち へ きました。', kana: 'ともだちがうちへきました。', romaji: 'Tomodachi ga uchi e kimashita.', vietnamese: 'Bạn tôi đã đến nhà tôi chơi.' },
+      { japanese: '何時 に うち へ 帰りますか。', kana: 'なんじにうちへかえりますか。', romaji: 'Nanji ni uchi e kaerimasu ka.', vietnamese: 'Mấy giờ bạn về nhà?' },
     ],
     commonMistakes: [
-      'Đọc là "he" thay vì "e".',
+      'Phát âm trợ từ là "he" thay vì "e".',
     ],
     lessonId: 'minna-bai-5-di-chuyen-phuong-tien',
     jlptLevel: 'N5',
@@ -211,6 +256,8 @@ export const GRAMMAR_LIBRARY: GrammarItem[] = [
     whenToUse: 'Nói về chuyến đi du lịch, đi làm bằng gì, đi cùng ai.',
     examples: [
       { japanese: 'ともだち と 電車 で いきました。', kana: 'ともだちとでんしゃでいきました。', romaji: 'Tomodachi to densha de ikimashita.', vietnamese: 'Tôi đã đi bằng tàu điện cùng với bạn.' },
+      { japanese: '家族 と 日本 へ きました。', kana: 'かぞくとにほんへきました。', romaji: 'Kazoku to nihon e kimashita.', vietnamese: 'Tôi đã đến Nhật cùng với gia đình.' },
+      { japanese: '一人 で 行きます。', kana: 'ひとりでおこないます。', romaji: 'Hitori de ikimasu.', vietnamese: 'Tôi đi một mình (một mình dùng 一人で, không dùng と).' },
     ],
     commonMistakes: [
       'Nói "あるいて で" khi đi bộ - Đi bộ là あるいて, không đi với で!',
@@ -218,6 +265,8 @@ export const GRAMMAR_LIBRARY: GrammarItem[] = [
     lessonId: 'minna-bai-5-di-chuyen-phuong-tien',
     jlptLevel: 'N5',
   },
+
+  // --- BÀI 6 ---
   {
     id: 'g-13',
     pattern: 'N を V(tha động từ) / N(nơi chốn) で V',
@@ -228,6 +277,8 @@ export const GRAMMAR_LIBRARY: GrammarItem[] = [
     whenToUse: 'Miêu tả ăn cơm ở căng tin, đọc sách ở thư viện, mua đồ ở siêu thị.',
     examples: [
       { japanese: 'レストラン で 昼ごはん を たべます。', kana: 'れすとらんでひるごはんをたべます。', romaji: 'Resutoran de hirugohan o tabemasu.', vietnamese: 'Tôi ăn trưa ở nhà hàng.' },
+      { japanese: 'としょかん で 本 を よみます。', kana: 'としょかんでほんをよみます。', romaji: 'Toshokan de hon o yomimasu.', vietnamese: 'Tôi đọc sách ở thư viện.' },
+      { japanese: 'スーパー で 何 を 買いましたか。', kana: 'すーぱーでなにをかいannamashita ka.', romaji: 'Suupaa de nani o kaimashita ka.', vietnamese: 'Bạn đã mua gì ở siêu thị?' },
     ],
     commonMistakes: [
       'Nhầm で (nơi diễn ra hành động) với に (nơi tồn tại arimasu/imasu).',
@@ -246,13 +297,336 @@ export const GRAMMAR_LIBRARY: GrammarItem[] = [
     examples: [
       { japanese: 'いっしょ に お茶 を のみませんか。', kana: 'いっしょにおちゃをのみませんか。', romaji: 'Issho ni ocha o nomimasen ka.', vietnamese: 'Cùng đi uống trà với tôi nhé?' },
       { japanese: 'ええ、のみましょう。', kana: 'ええ、のみましょう。', romaji: 'Ee, nomimashou.', vietnamese: 'Được chứ, chúng ta cùng uống nào.' },
+      { japanese: 'ちょっと 休みましょう。', kana: 'ちょっとやすみましょう。', romaji: 'Chotto yasumimashou.', vietnamese: 'Nghỉ giải lao một chút nào.' },
     ],
     commonMistakes: [
-      'Dùng 〜ましょう khi rủ người bề trên - Nghe có phần đường đột.',
+      'Dùng 〜ましょう khi rủ người bề trên - Nghe có phần áp đặt. Hãy dùng 〜ませんか.',
     ],
     lessonId: 'minna-bai-6-hanh-dong-an-uong',
     jlptLevel: 'N5',
   },
+
+  // --- BÀI 7 ---
+  {
+    id: 'g-14b',
+    pattern: 'N(công cụ/ngôn ngữ) で V',
+    title: 'Trợ từ で chỉ phương thức, công cụ, ngôn ngữ',
+    meaning: 'Bằng công cụ gì / Bằng tiếng gì',
+    vietnameseExplanation: 'Trợ từ で đứng sau dụng cụ (đũa, kéo, bút) hoặc ngôn ngữ để chỉ phương thức thực hiện hành động.',
+    formationRules: ['Công cụ / Ngôn ngữ + で + Động từ'],
+    whenToUse: 'Nói ăn bằng đũa, viết bằng bút chì, nói bằng tiếng Nhật.',
+    examples: [
+      { japanese: 'はし で ごはん を たべます。', kana: 'はしでごはんをたべます。', romaji: 'Hashi de gohan o tabemasu.', vietnamese: 'Tôi ăn cơm bằng đũa.' },
+      { japanese: '日本語 で レポート を かきました。', kana: 'にほんごでれぽーとをかきました。', romaji: 'Nihongo de repooto o kakimashita.', vietnamese: 'Tôi đã viết báo cáo bằng tiếng Nhật.' },
+      { japanese: 'これ は 日本語 で 何 ですか。', kana: 'これはにほんごでなんですか。', romaji: 'Kore wa nihongo de nan desu ka.', vietnamese: 'Cái này tiếng Nhật gọi là gì?' },
+    ],
+    commonMistakes: [
+      'Nhầm với trợ từ を khi nói ngôn ngữ ("日本語を話します" là tha động từ, còn "日本語で話します" là bằng tiếng Nhật).',
+    ],
+    lessonId: 'minna-bai-7-cong-cu-cho-nhan',
+    jlptLevel: 'N5',
+  },
+  {
+    id: 'g-14c',
+    pattern: 'N(người) に あげます / もらいます',
+    title: 'Hành vi cho và nhận: Agemasu và Moraimasu',
+    meaning: 'Tặng cho ai cái gì / Nhận từ ai cái gì',
+    vietnameseExplanation: 'あげます: người nói tặng cho người khác (đối tượng nhận đi với に). もらいます: người nói nhận từ ai đó (nguồn xuất phát đi với に hoặc から).',
+    formationRules: ['Người nhận に Vật を あげます', 'Người cho に/から Vật を もらいます'],
+    whenToUse: 'Dùng trong sinh nhật, tặng hoa, nhận quà, vay mượn tiền.',
+    examples: [
+      { japanese: '母 に 花 を あげました。', kana: 'ははにはなをあげました。', romaji: 'Haha ni hana o agemashita.', vietnamese: 'Tôi đã tặng hoa cho mẹ.' },
+      { japanese: '先生 に 本 を もらいました。', kana: 'せんせいにほんをもらいました。', romaji: 'Sensei ni hon o moraimashita.', vietnamese: 'Tôi đã nhận được sách từ thầy giáo.' },
+      { japanese: '友達 に お金 を かしました。', kana: 'ともだちにおかねをかしました。', romaji: 'Tomodachi ni okane o kashimashita.', vietnamese: 'Tôi đã cho bạn bè vay tiền.' },
+    ],
+    commonMistakes: [
+      'Dùng あげます khi người khác tặng cho mình - Sai! Người khác tặng mình phải dùng くれました.',
+    ],
+    lessonId: 'minna-bai-7-cong-cu-cho-nhan',
+    jlptLevel: 'N5',
+  },
+  {
+    id: 'g-14d',
+    pattern: 'もう V-ました / まだ です',
+    title: 'Đã làm rồi / Chưa làm',
+    meaning: 'Đã hoàn thành hành động hay chưa',
+    vietnameseExplanation: 'もう mang nghĩa là "đã rồi". Khi trả lời câu hỏi phủ định "Chưa", không dùng ませんでした mà dùng "いいえ、まだです" (Chưa, vẫn chưa làm).',
+    formationRules: ['もう + V-ましたか。', '-> はい、もう V-ました。 / いいえ、まだです。'],
+    whenToUse: 'Hỏi đã ăn cơm chưa, đã nộp bài tập chưa, đã mua vé chưa.',
+    examples: [
+      { japanese: 'もう 昼ごはん を 食べましたか。', kana: 'もうひるごはんをたべましたか。', romaji: 'Mou hirugohan o tabemashita ka.', vietnamese: 'Bạn đã ăn cơm trưa chưa?' },
+      { japanese: 'いいえ、まだ です。', kana: 'いいえ、まだです。', romaji: 'Iie, mada desu.', vietnamese: 'Chưa, tôi vẫn chưa ăn.' },
+      { japanese: '荷物 は もう 送りましたか。', kana: 'にもつはもうおくりましたか。', romaji: 'Nimotsu wa mou okurimashita ka.', vietnamese: 'Hành lý bạn đã gửi đi chưa?' },
+    ],
+    commonMistakes: [
+      'Trả lời "いいえ、食べませんでした" - Sai! Câu đó nghĩa là "Tôi đã không ăn (và sẽ không ăn nữa)", còn mada nghĩa là sắp ăn.',
+    ],
+    lessonId: 'minna-bai-7-cong-cu-cho-nhan',
+    jlptLevel: 'N5',
+  },
+
+  // --- BÀI 8 ---
+  {
+    id: 'g-14e',
+    pattern: 'Tính từ đuôi い: 〜い / 〜くない / 〜かった / 〜くなかった',
+    title: 'Chia tính từ đuôi い (i-adjective)',
+    meaning: 'Tính chất khẳng định, phủ định và quá khứ của tính từ đuôi i',
+    vietnameseExplanation: 'Tính từ đuôi い tận cùng là い. Phủ định bỏ い thêm くない. Quá khứ bỏ い thêm かった. Quá khứ phủ định bỏ い thêm くなかった. Ngoại lệ: いい (tốt) biến thành よくない, よかった.',
+    formationRules: [
+      'Khẳng định hiện tại: Adj-い です',
+      'Phủ định hiện tại: Adj-くない です',
+      'Khẳng định quá khứ: Adj-かった です',
+      'Phủ định quá khứ: Adj-くなかった です',
+    ],
+    whenToUse: 'Miêu tả món ăn ngon/dở, thời tiết nóng/lạnh, giá cả đắt/rẻ.',
+    examples: [
+      { japanese: 'この 料理 は おいしい です。', kana: 'このりょうりはおいしいです。', romaji: 'Kono ryouri wa oishii desu.', vietnamese: 'Món ăn này ngon.' },
+      { japanese: 'きのう は あまり さむくなかった です。', kana: 'きのうはあまりさむくなかったです。', romaji: 'Kinou wa amari samukunakatta desu.', vietnamese: 'Hôm qua trời không lạnh lắm.' },
+      { japanese: 'てんき が よかった です。', kana: 'てんきがよかったです。', romaji: 'Tenki ga yokatta desu.', vietnamese: 'Thời tiết đã rất đẹp.' },
+    ],
+    commonMistakes: [
+      'Chia いい thành いくない - Sai! Phải là よくない.',
+      'Thêm じゃありません vào tính từ đuôi i: "たかいじゃありません" - Sai hoàn toàn!',
+    ],
+    lessonId: 'minna-bai-8-tinh-tu-mieu-ta',
+    jlptLevel: 'N5',
+  },
+  {
+    id: 'g-14f',
+    pattern: 'Tính từ đuôi な: 〜な / 〜じゃない / 〜でした / 〜じゃなかった',
+    title: 'Chia tính từ đuôi な (na-adjective)',
+    meaning: 'Tính chất khẳng định, phủ định và quá khứ của tính từ đuôi na',
+    vietnameseExplanation: 'Khi đứng độc lập hoặc kết câu: giống hệt danh từ (bỏ な thêm です / じゃありません / でした). Khi bổ nghĩa đứng trước danh từ: BẮT BUỘC giữ lại chữ な.',
+    formationRules: [
+      'Bổ nghĩa danh từ: Adj-な + Danh từ',
+      'Khẳng định: Adj です',
+      'Phủ định: Adj じゃありません',
+      'Quá khứ: Adj でした',
+    ],
+    whenToUse: 'Miêu tả thành phố nhộn nhịp, phòng sạch sẽ, con người tốt bụng, tiện lợi.',
+    examples: [
+      { japanese: 'ハノイ は にぎやかな まち です。', kana: 'はのいはにぎやかなまちです。', romaji: 'Hanoi wa nigiyakana machi desu.', vietnamese: 'Hà Nội là một thành phố nhộn nhịp.' },
+      { japanese: 'この へや は しずか じゃありません。', kana: 'このへやはしずかじゃありません。', romaji: 'Kono heya wa shizuka ja arimasen.', vietnamese: 'Căn phòng này không yên tĩnh.' },
+      { japanese: 'たなかさん は しんせつな ひと です。', kana: 'たなかさんはしんせつなひとです。', romaji: 'Tanaka-san wa shinsetsuna hito desu.', vietnamese: 'Anh Tanaka là người tốt bụng.' },
+    ],
+    commonMistakes: [
+      'Tưởng きれい (đẹp/sạch) và ゆうめい (nổi tiếng) là tính từ đuôi i vì có đuôi "i". Thực tế đây là tính từ đuôi な!',
+    ],
+    lessonId: 'minna-bai-8-tinh-tu-mieu-ta',
+    jlptLevel: 'N5',
+  },
+
+  // --- BÀI 9 ---
+  {
+    id: 'g-14g',
+    pattern: 'N が 好き / 嫌い / 上手 / 下手 です',
+    title: 'Trợ từ が với tính từ sở thích và năng lực',
+    meaning: 'Thích / Ghét / Giỏi / Kém cái gì',
+    vietnameseExplanation: 'Khác với tiếng Việt ("thích món gì"), tiếng Nhật coi thích/giỏi là tính chất của đối tượng nên đối tượng đi với trợ từ が chứ không dùng を.',
+    formationRules: ['Chủ ngữ は + Đối tượng + が + 好き / 嫌い / 上手 / 下手 + です。'],
+    whenToUse: 'Nói về sở thích ẩm thực, âm nhạc, khả năng chơi thể thao, ngoại ngữ.',
+    examples: [
+      { japanese: 'わたし は 日本料理 が 好き です。', kana: 'わたしはにほんりょうりがすきです。', romaji: 'Watashi wa nihonryouri ga suki desu.', vietnamese: 'Tôi thích món ăn Nhật Bản.' },
+      { japanese: 'ミラーさん は 歌 が 上手 です。', kana: 'みらーさんはうたがじょうずです。', romaji: 'Miraa-san wa uta ga jouzu desu.', vietnamese: 'Anh Miller hát rất giỏi.' },
+      { japanese: 'スポーツ が あまり 好きじゃありません。', kana: 'すぽーつがあまりすきじゃありません。', romaji: 'Supootsu ga amari sukija arimasen.', vietnamese: 'Tôi không thích thể thao lắm.' },
+    ],
+    commonMistakes: [
+      'Tự khen mình "わたしは日本語が上手です" - Người Nhật rất khiêm tốn, chỉ khen người khác, tự nói về mình dùng まだまだです.',
+    ],
+    lessonId: 'minna-bai-9-so-thich-nang-luc',
+    jlptLevel: 'N5',
+  },
+  {
+    id: 'g-14h',
+    pattern: 'N が 分かります / あります / 〜から (lý do)',
+    title: 'Hiểu / Sở hữu và Mệnh đề chỉ lý do (Kara)',
+    meaning: 'Hiểu cái gì / Có cái gì / Vì... nên...',
+    vietnameseExplanation: 'わかります và あります là các nội động từ chỉ trạng thái hiểu biết và sở hữu, đi với trợ từ が. Liên từ から đứng sau câu lý do để giải thích nguyên nhân.',
+    formationRules: ['N が わかります / あります', 'Mệnh đề 1 (Lý do) から、Mệnh đề 2 (Kết quả)。'],
+    whenToUse: 'Giải thích vì không có tiền nên không mua, vì bận nên không đi.',
+    examples: [
+      { japanese: '日本語 が 少し わかります。', kana: 'にほんごがすこしわかります。', romaji: 'Nihongo ga sukoshi wakarimasu.', vietnamese: 'Tôi hiểu tiếng Nhật một chút.' },
+      { japanese: '時間 が ありませんから、タクシー で 行きます。', kana: 'じかんがありませんから、たくしーでいきます。', romaji: 'Jikan ga arimasen kara, takushii de ikimasu.', vietnamese: 'Vì không có thời gian nên tôi sẽ đi bằng taxi.' },
+      { japanese: 'お金 が ありますか。', kana: 'おかねがありますか。', romaji: 'Okane ga arimasu ka.', vietnamese: 'Bạn có tiền không?' },
+    ],
+    commonMistakes: [
+      'Dùng を với あります ("おかねをあります" là sai!).',
+    ],
+    lessonId: 'minna-bai-9-so-thich-nang-luc',
+    jlptLevel: 'N5',
+  },
+
+  // --- BÀI 10 ---
+  {
+    id: 'g-14i',
+    pattern: 'N(địa điểm) に N(vật/người) が あります / います',
+    title: 'Sự tồn tại: Phân biệt あります và います',
+    meaning: 'Ở nơi nào có vật gì / có ai',
+    vietnameseExplanation: 'あります dùng cho đồ vật vô tri, thực vật, sự việc bất động. います dùng cho người và động vật có tri giác, có thể tự di chuyển.',
+    formationRules: [
+      'Địa điểm + に + Vật + が + あります。',
+      'Địa điểm + に + Người/Động vật + が + います。',
+    ],
+    whenToUse: 'Miêu tả đồ đạc trong phòng, tìm người ở văn phòng, hỏi người trong nhà.',
+    examples: [
+      { japanese: '机 の 上 に 本 が あります。', kana: 'つくえのうえにほんがあります。', romaji: 'Tsukue no ue ni hon ga arimasu.', vietnamese: 'Trên bàn có quyển sách.' },
+      { japanese: '庭 に 猫 が います。', kana: 'にわにねこがいます。', romaji: 'Niwa ni neko ga imasu.', vietnamese: 'Trong sân có con mèo.' },
+      { japanese: '部屋 に だれ も いません。', kana: 'へやにだれもいません。', romaji: 'Heya ni dare mo imasen.', vietnamese: 'Trong phòng không có ai cả.' },
+    ],
+    commonMistakes: [
+      'Dùng "いぬ が あります" - Sai! Chó là động vật nên phải dùng "いぬ が います".',
+    ],
+    lessonId: 'minna-bai-10-vi-tri-ton-tai',
+    jlptLevel: 'N5',
+  },
+  {
+    id: 'g-14j',
+    pattern: 'N1 の N2(vị trí) に N3 が あります/います',
+    title: 'Vị trí tương đối trong không gian',
+    meaning: 'Trên, dưới, trước, sau, trong, ngoài, cạnh, giữa',
+    vietnameseExplanation: 'Các từ chỉ vị trí: 上 (ue - trên), 下 (shita - dưới), 前 (mae - trước), 後ろ (ushiro - sau), 中 (naka - trong), 外 (soto - ngoài), 隣 (tonari - cạnh), 間 (aida - giữa).',
+    formationRules: ['N1 の Vị trí + に + N3 が あります/います。'],
+    whenToUse: 'Chỉ chính xác vị trí đồ vật thất lạc hoặc địa điểm cửa hàng.',
+    examples: [
+      { japanese: 'ポスト は 銀行 の 前 に あります。', kana: 'ぽすとはぎんこうのまえにあります。', romaji: 'Posuto wa ginkou no mae ni arimasu.', vietnamese: 'Hòm thư nằm ở phía trước ngân hàng.' },
+      { japanese: '本棚 と 机 の 間 に かばん が あります。', kana: 'ほんだなとつくえのあいだにかばんがあります。', romaji: 'Hondana to tsukue no aida ni kaban ga arimasu.', vietnamese: 'Chiếc cặp ở giữa giá sách và bàn học.' },
+      { japanese: '駅 の 隣 に コンビニ が あります。', kana: 'えきのとなりにあるこんびにがあります。', romaji: 'Eki no tonari ni konbini ga arimasu.', vietnamese: 'Cạnh nhà ga có một cửa hàng tiện lợi.' },
+    ],
+    commonMistakes: [
+      'Nhầm giữa 隣 (tonari - cạnh sát bên cùng chủng loại) và 近く (chikaku - khu vực gần đó).',
+    ],
+    lessonId: 'minna-bai-10-vi-tri-ton-tai',
+    jlptLevel: 'N5',
+  },
+
+  // --- BÀI 11 ---
+  {
+    id: 'g-14k',
+    pattern: 'Lượng từ trong câu: N を [Lượng từ] V',
+    title: 'Vị trí và cách dùng lượng từ, số đếm',
+    meaning: 'Số lượng vật hoặc người thực hiện hành động',
+    vietnameseExplanation: 'Trong tiếng Nhật, lượng từ thường đặt TRỰC TIẾP TRƯỚC ĐỘNG TỪ (sau trợ từ を hoặc が). Không cần trợ từ nối giữa lượng từ và động từ.',
+    formationRules: ['Danh từ + を + [Số lượng/Lượng từ] + Động từ'],
+    whenToUse: 'Gọi món ăn, mua hoa quả, nói thời lượng học tập.',
+    examples: [
+      { japanese: 'りんご を ３つ 買いました。', kana: 'りんごをみっつかいannamashita。', romaji: 'Ringo o mittsu kaimashita.', vietnamese: 'Tôi đã mua 3 quả táo.' },
+      { japanese: '学生 が ４人 います。', kana: 'がくせいがよにんいます。', romaji: 'Gakusei ga yonin imasu.', vietnamese: 'Có 4 người học sinh.' },
+      { japanese: '切手 を ２枚 ください。', kana: 'きってをにまいください。', romaji: 'Kitte o nimai kudasai.', vietnamese: 'Cho tôi xin 2 con tem.' },
+    ],
+    commonMistakes: [
+      'Thêm trợ từ を sau lượng từ: "りんごを 3つを 買いました" - Sai!',
+    ],
+    lessonId: 'minna-bai-11-so-dem-luong-tu',
+    jlptLevel: 'N5',
+  },
+  {
+    id: 'g-14l',
+    pattern: '[Khoảng thời gian] に [Số lần] 回 V',
+    title: 'Diễn tả tần suất hành động',
+    meaning: 'Làm việc gì bao nhiêu lần trong một khoảng thời gian',
+    vietnameseExplanation: 'Dùng trợ từ に đặt sau đơn vị thời gian (ngày, tuần, tháng, năm) để biểu thị tần suất thực hiện.',
+    formationRules: ['Thời gian + に + Số lần + 回 (かい) + Động từ'],
+    whenToUse: 'Nói 1 tuần đi bơi 2 lần, 1 tháng về quê 1 lần, 1 ngày uống thuốc 3 lần.',
+    examples: [
+      { japanese: '１か月 に ２回 映画 を 見ます。', kana: 'いっかげつににかいえいがをみます。', romaji: 'Ikkagetsu ni nikai eiga o mimasu.', vietnamese: 'Một tháng tôi xem phim 2 lần.' },
+      { japanese: '１日 に ３回 薬 を 飲みます。', kana: 'いちにちにさんかいくすりをのみます。', romaji: 'Ichinichi ni sankai kusuri o nomimasu.', vietnamese: 'Một ngày tôi uống thuốc 3 lần.' },
+      { japanese: '１週間 に １回 テニス を します。', kana: 'いっしゅうかんにいっかいてにすをします。', romaji: 'Isshuukan ni ikkai tenisu o shimasu.', vietnamese: 'Một tuần tôi chơi tennis 1 lần.' },
+    ],
+    commonMistakes: [
+      'Quên trợ từ に sau khoảng thời gian.',
+    ],
+    lessonId: 'minna-bai-11-so-dem-luong-tu',
+    jlptLevel: 'N5',
+  },
+
+  // --- BÀI 12 ---
+  {
+    id: 'g-14m',
+    pattern: 'N1 は N2 より Adj です / N1 と N2 と どちらが Adj ですか',
+    title: 'Mẫu câu so sánh hơn và so sánh lựa chọn',
+    meaning: 'N1 hơn N2 / Giữa N1 và N2 cái nào hơn?',
+    vietnameseExplanation: 'N1 は N2 より mang nghĩa N1 hơn N2 về mặt tính chất nào đó. Khi hỏi lựa chọn giữa 2 vật dùng "どちらが". Trả lời chọn N1 dùng "N1 の ほうが Adj です".',
+    formationRules: [
+      'N1 は N2 より + Tính từ + です。',
+      'N1 と N2 と どちらが + Tính từ + ですか。',
+      '-> N1 の ほうが + Tính từ + です。',
+    ],
+    whenToUse: 'So sánh thời tiết hai mùa, hai thành phố, hai loại phương tiện.',
+    examples: [
+      { japanese: '飛行機 は 電車 より 速い です。', kana: 'ひこうきはでんしゃよりはやいです。', romaji: 'Hikouki wa densha yori hayai desu.', vietnamese: 'Máy bay nhanh hơn tàu điện.' },
+      { japanese: '夏 と 冬 と どちらが 好きですか。', kana: 'なつとふゆとどちらがすきですか。', romaji: 'Natsu to fuyu to dochira ga suki desu ka.', vietnamese: 'Mùa hè và mùa đông bạn thích mùa nào hơn?' },
+      { japanese: '冬 の ほうが 好きです。', kana: 'ふゆのほうがすきです。', romaji: 'Fuyu no hou ga suki desu.', vietnamese: 'Tôi thích mùa đông hơn.' },
+    ],
+    commonMistakes: [
+      'Dùng どれが thay vì どちらが khi so sánh giữa 2 đối tượng (2 đối tượng bắt buộc dùng どちら).',
+    ],
+    lessonId: 'minna-bai-11-so-dem-luong-tu',
+    jlptLevel: 'N5',
+  },
+  {
+    id: 'g-14n',
+    pattern: '[Phạm vi] の中で [Nghi vấn từ] が 一番 Adj ですか',
+    title: 'Mẫu câu so sánh nhất (一番 - Ichiban)',
+    meaning: 'Trong số... cái gì / ai / khi nào là... nhất?',
+    vietnameseExplanation: 'So sánh từ 3 đối tượng trở lên trong một phạm vi xác định. 一番 (ichiban) đứng trước tính từ.',
+    formationRules: ['Phạm vi + の中で + Nghi vấn từ (何/だれ/どこ/いつ) + が + 一番 + Tính từ + ですか。'],
+    whenToUse: 'Hỏi mùa nào đẹp nhất, ai giỏi nhất trong lớp, món nào ngon nhất.',
+    examples: [
+      { japanese: '１年 の 中で いつ が 一番 寒いですか。', kana: 'いちねんのなかでいつがいちばんさむいですか。', romaji: 'Ichinen no naka de itsu ga ichiban samui desu ka.', vietnamese: 'Trong một năm khi nào là lạnh nhất?' },
+      { japanese: '１月 が 一番 寒いです。', kana: 'いちがつがいちばんさむいです。', romaji: 'Ichigatsu ga ichiban samui desu.', vietnamese: 'Tháng một là lạnh nhất.' },
+      { japanese: '果物 の 中で りんご が 一番 好きです。', kana: 'くだもののなかでりんごがいちばんすきです。', romaji: 'Kudamono no naka de ringo ga ichiban suki desu.', vietnamese: 'Trong các loại trái cây tôi thích táo nhất.' },
+    ],
+    commonMistakes: [
+      'Dùng trợ từ は thay cho が sau từ để hỏi: "いつはいちばん" -> Sai! Từ để hỏi làm chủ ngữ bắt buộc đi với が.',
+    ],
+    lessonId: 'minna-bai-11-so-dem-luong-tu',
+    jlptLevel: 'N5',
+  },
+
+  // --- BÀI 13 ---
+  {
+    id: 'g-14o',
+    pattern: 'N が 欲しい です / V-たい です',
+    title: 'Mẫu câu biểu thị mong muốn: Hoshii và V-tai',
+    meaning: 'Muốn có N / Muốn làm V',
+    vietnameseExplanation: '欲しい (hoshii) là tính từ đuôi i, dùng khi muốn sở hữu danh từ (N が ほしい). V-たい chia như tính từ đuôi i, dùng khi muốn thực hiện hành động (bỏ ます + たい).',
+    formationRules: [
+      'Danh từ + が + 欲しい です',
+      'Động từ (bỏ ます) + たい です (Phủ định: たくない です)',
+    ],
+    whenToUse: 'Bày tỏ mong muốn của người nói (ngôi thứ nhất).',
+    examples: [
+      { japanese: '新しい 車 が 欲しい です。', kana: 'あたらしいくるまがほしいです。', romaji: 'Atarashii kuruma ga hoshii desu.', vietnamese: 'Tôi muốn có một chiếc ô tô mới.' },
+      { japanese: '日本 へ 行き たい です。', kana: 'にほんへいきたいです。', romaji: 'Nihon e ikitai desu.', vietnamese: 'Tôi muốn đi Nhật Bản.' },
+      { japanese: '今 何 も 食べたくない です。', kana: 'いまなにもたべたくないです。', romaji: 'Ima nani mo tabetakunai desu.', vietnamese: 'Bây giờ tôi không muốn ăn gì cả.' },
+    ],
+    commonMistakes: [
+      'Dùng たい trực tiếp để hỏi cấp trên ("社長、コーヒーを飲みたいですか" - Rất bất lịch sự! Hãy dùng ikaga desu ka).',
+    ],
+    lessonId: 'minna-bai-14-chia-the-te-nho-va',
+    jlptLevel: 'N5',
+  },
+  {
+    id: 'g-14p',
+    pattern: 'N(địa điểm) へ V(bỏ ます) / N に 行きます / 来ます',
+    title: 'Mục đích của hành động di chuyển',
+    meaning: 'Đi / Đến một nơi nào đó ĐỂ LÀM GÌ',
+    vietnameseExplanation: 'Động từ bỏ ます hoặc danh từ chỉ hoạt động kết hợp với trợ từ に trước các động từ di chuyển để chỉ mục đích của chuyến đi.',
+    formationRules: ['Địa điểm + へ + V(bỏ ます) / Danh từ hoạt động + に + 行きます / 来ます / 帰ります'],
+    whenToUse: 'Đi bưu điện gửi thư, đến nhà bạn chơi, đi siêu thị mua sắm.',
+    examples: [
+      { japanese: '郵便局 へ 手紙 を 出し に 行きます。', kana: 'ゆうびんきょくへてがみをだしにいきます。', romaji: 'Yuubinkyoku e tegami o dashi ni ikimasu.', vietnamese: 'Tôi đi bưu điện để gửi thư.' },
+      { japanese: 'デパート へ 買い物 に 行きました。', kana: 'でぱーとへかいものにいきました。', romaji: 'Depaato e kaimono ni ikimashita.', vietnamese: 'Tôi đã đi bách hóa để mua sắm.' },
+      { japanese: '日本 へ 日本語 を 勉強し に 来ました。', kana: 'にほんへにほんごをべんきょうしにきました。', romaji: 'Nihon e nihongo o benkyoushi ni kimashita.', vietnamese: 'Tôi đã đến Nhật để học tiếng Nhật.' },
+    ],
+    commonMistakes: [
+      'Giữ nguyên ます: "だします に 行きます" - Sai! Phải bỏ ます -> "だし に 行きます".',
+    ],
+    lessonId: 'minna-bai-14-chia-the-te-nho-va',
+    jlptLevel: 'N5',
+  },
+
+  // --- BÀI 14 ---
   {
     id: 'g-15',
     pattern: 'V(thể て) + ください',
@@ -264,6 +638,7 @@ export const GRAMMAR_LIBRARY: GrammarItem[] = [
     examples: [
       { japanese: 'ちょっと まって ください。', kana: 'ちょっとまってください。', romaji: 'Chotto matte kudasai.', vietnamese: 'Xin vui lòng đợi một chút.' },
       { japanese: 'ゆっくり はなして ください。', kana: 'ゆっくりはなしてください。', romaji: 'Yukkuri hanashite kudasai.', vietnamese: 'Xin hãy nói chậm lại một chút.' },
+      { japanese: 'ここ に お名前 を 書いて ください。', kana: 'ここにおなまえをかいてください。', romaji: 'Koko ni onamae o kaite kudasai.', vietnamese: 'Xin vui lòng viết tên bạn vào đây.' },
     ],
     commonMistakes: [
       'Dùng động từ thể ます kết hợp ください (ví dụ: まちます ください - Sai hoàn toàn!).',
@@ -276,18 +651,22 @@ export const GRAMMAR_LIBRARY: GrammarItem[] = [
     pattern: 'V(thể て) + います',
     title: 'Hành động đang tiếp diễn: Đang làm V',
     meaning: 'Diễn tả hành động đang diễn ra tại thời điểm nói',
-    vietnameseExplanation: 'Tương đương với thì hiện tại tiếp diễn (Present Continuous) trong tiếng Anh.',
+    vietnameseExplanation: 'Tương đương với thì hiện tại tiếp diễn trong tiếng Anh (V-ing).',
     formationRules: ['V(thể て) + います'],
     whenToUse: 'Nói mình đang học bài, trời đang mưa, đang ăn cơm.',
     examples: [
       { japanese: 'いま 雨 が ふって います。', kana: 'いまあめがふっています。', romaji: 'Ima ame ga futte imasu.', vietnamese: 'Bây giờ trời đang mưa.' },
+      { japanese: '日本語 を 勉強して います。', kana: 'にほんごをべんきょうしています。', romaji: 'Nihongo o benkyoushite imasu.', vietnamese: 'Tôi đang học tiếng Nhật.' },
+      { japanese: '父 は テレビ を 見て います。', kana: 'ちちはてれびをみています。', romaji: 'Chichi wa terebi o mite imasu.', vietnamese: 'Bố tôi đang xem tivi.' },
     ],
     commonMistakes: [
-      'Chia sai thể Te của động từ (đặc biệt là các động từ nhóm 1).',
+      'Chia sai thể Te của động từ (đặc biệt là các động từ nhóm 1 tận cùng là ki, gi, mi, bi, ni).',
     ],
     lessonId: 'minna-bai-14-chia-the-te-nho-va',
     jlptLevel: 'N5',
   },
+
+  // --- BÀI 15 ---
   {
     id: 'g-17',
     pattern: 'V(thể て) + もいいですか / V(thể て) + はいけません',
@@ -299,6 +678,7 @@ export const GRAMMAR_LIBRARY: GrammarItem[] = [
     examples: [
       { japanese: 'ここで 写真 を とって も いいですか。', kana: 'ここでしゃしんをとってもいいですか。', romaji: 'Koko de shashin o totte mo ii desu ka.', vietnamese: 'Tôi chụp ảnh ở đây có được không?' },
       { japanese: 'ここに 車 を とめて は いけません。', kana: 'ここにくるまをとめてはいけません。', romaji: 'Koko ni kuruma o tomete wa ikemasen.', vietnamese: 'Không được đỗ xe ở chỗ này.' },
+      { japanese: 'たばこ を すって は いけません。', kana: 'たばこをすってはいけません。', romaji: 'Tabako o sutte wa ikemasen.', vietnamese: 'Cấm hút thuốc lá.' },
     ],
     commonMistakes: [
       'Dùng 〜てはいけません khi từ chối người lớn tuổi (nên dùng cách nói tránh nhẹ nhàng hơn).',
@@ -306,6 +686,51 @@ export const GRAMMAR_LIBRARY: GrammarItem[] = [
     lessonId: 'minna-bai-15-xin-phep-cam-doan',
     jlptLevel: 'N5',
   },
+  {
+    id: 'g-17b',
+    pattern: 'V(thể て) + います (Trạng thái kết hôn, cư trú, nghề nghiệp)',
+    title: 'Diễn tả trạng thái kéo dài bằng 〜ています',
+    meaning: 'Đang cư trú, đã kết hôn, biết, có đồ đạc',
+    vietnameseExplanation: 'Một số động từ khi chia sang 〜ています không mang nghĩa hành động đang diễn ra mà biểu thị trạng thái kết quả của hành động đó còn kéo dài: 住んでいます (sống tại), 結婚しています (đã kết hôn), 知っています (biết), 持っています (có/sở hữu).',
+    formationRules: ['V(thể て) + います (Trạng thái)'],
+    whenToUse: 'Nói nơi ở hiện tại, tình trạng hôn nhân, nghề nghiệp.',
+    examples: [
+      { japanese: 'わたし は ハノイ に 住んで います。', kana: 'わたしははのいにすんでいます。', romaji: 'Watashi wa Hanoi ni sunde imasu.', vietnamese: 'Tôi đang sinh sống ở Hà Nội.' },
+      { japanese: 'たなかさん は けっこんして います。', kana: 'たなかさんはけっこんしています。', romaji: 'Tanaka-san wa kekkonshite imasu.', vietnamese: 'Anh Tanaka đã kết hôn.' },
+      { japanese: 'その 人 を 知って いますか。いいえ、知りません。', kana: 'そのひとをしっていますか。いいえ、しりません。', romaji: 'Sono hito o shitte imasu ka. Iie, shirimasen.', vietnamese: 'Bạn có biết người đó không? Không, tôi không biết (phủ định của 知っています là 知りません).' },
+    ],
+    commonMistakes: [
+      'Nói "知りませんでした" hoặc "知っていません" khi trả lời không biết -> Sai! Phủ định của 知っています bắt buộc là 知りません.',
+    ],
+    lessonId: 'minna-bai-15-xin-phep-cam-doan',
+    jlptLevel: 'N5',
+  },
+
+  // --- BÀI 16 ---
+  {
+    id: 'g-17c',
+    pattern: 'V1-て、V2-て、... V-ます / V1-て から V2',
+    title: 'Nối các hành động liên tiếp & Sau khi làm V1 thì làm V2',
+    meaning: 'Làm V1, rồi làm V2... / Sau khi làm V1 thì làm V2',
+    vietnameseExplanation: 'Dùng thể て để xâu chuỗi các hành động theo trình tự thời gian. Thì của toàn bộ câu được quyết định bởi động từ cuối cùng. Mẫu câu 〜てから nhấn mạnh hành động 1 phải xong hoàn toàn rồi mới làm hành động 2.',
+    formationRules: [
+      'V1-て、V2-て、V3-ます / ました。',
+      'V1-て から、V2-ます。',
+    ],
+    whenToUse: 'Kể về lịch trình trong ngày: thức dậy, rửa mặt, ăn sáng rồi đi học.',
+    examples: [
+      { japanese: '朝 起きて、シャワー を 浴びて、会社 へ 行きます。', kana: 'あさおきて、しゃわーをあびて、かいしゃへいきます。', romaji: 'Asa okite, shawaa o abite, kaisha e ikimasu.', vietnamese: 'Buổi sáng tôi thức dậy, tắm vòi sen rồi đi đến công ty.' },
+      { japanese: '国 へ 帰って から、父 の 会社 で 働きます。', kana: 'くにへかえってから、ちちのかいしゃではたらきます。', romaji: 'Kuni e kaette kara, chichi no kaisha de hatarakimasu.', vietnamese: 'Sau khi về nước, tôi sẽ làm việc ở công ty của bố.' },
+      { japanese: 'お金 を 入れて から、ボタン を 押して ください。', kana: 'おかねをいれてから、ぼたんをおしてください。', romaji: 'Okane o irete kara, botan o oshite kudasai.', vietnamese: 'Sau khi cho tiền vào, xin hãy nhấn nút.' },
+    ],
+    commonMistakes: [
+      'Nhầm 〜てから (sau khi) với Danh từ + から (từ đâu/khi nào).',
+    ],
+    lessonId: 'minna-bai-15-xin-phep-cam-doan',
+    jlptLevel: 'N5',
+  },
+
+  // --- BÀI 17 ---
   {
     id: 'g-18',
     pattern: 'V(thể ない) + でください',
@@ -316,6 +741,8 @@ export const GRAMMAR_LIBRARY: GrammarItem[] = [
     whenToUse: 'Khuyên bạn bè đừng thức khuya, đừng hút thuốc, đừng lo lắng.',
     examples: [
       { japanese: 'しんぱい しないで ください。', kana: 'しんぱいしないでください。', romaji: 'Shinpai shinaide kudasai.', vietnamese: 'Xin đừng lo lắng.' },
+      { japanese: 'パスポート を わすれないで ください。', kana: 'ぱすぽーとをわすれないでください。', romaji: 'Pasupooto o wasurenaide kudasai.', vietnamese: 'Xin đừng quên hộ chiếu nhé.' },
+      { japanese: 'ここ で 写真 を 撮らないで ください。', kana: 'ここでしゃしんをとらないでください。', romaji: 'Koko de shashin o toranaide kudasai.', vietnamese: 'Xin đừng chụp ảnh ở đây.' },
     ],
     commonMistakes: [
       'Nhầm sang V-て + ないでください.',
@@ -328,35 +755,246 @@ export const GRAMMAR_LIBRARY: GrammarItem[] = [
     pattern: 'V(thể ない bỏ い) + ければなりません',
     title: 'Bắt buộc, nghĩa vụ: Phải làm V',
     meaning: 'Phải làm một việc gì đó (không làm không được)',
-    vietnameseExplanation: 'Mẫu câu thể hiện nghĩa vụ khách quan hoặc bản thân tự thấy bắt buộc phải thực hiện.',
+    vietnameseExplanation: 'Mẫu câu thể hiện nghĩa vụ khách quan hoặc bản thân tự thấy bắt buộc phải thực hiện. Động từ thể ない bỏ い thêm ければなりません.',
     formationRules: ['V-ない (bỏ い) + ければなりません'],
     whenToUse: 'Nói về việc phải uống thuốc, phải trả tiền, phải đi học đúng giờ.',
     examples: [
       { japanese: 'くすり を のまなければ なりません。', kana: 'くすりをのまなければなりません。', romaji: 'Kusuri o nomanakereba narimasen.', vietnamese: 'Tôi phải uống thuốc.' },
+      { japanese: '明日 レポート を 出さなければ なりません。', kana: 'あしたれぽーとをださなければなりません。', romaji: 'Ashita repooto o dasanakereba narimasen.', vietnamese: 'Ngày mai tôi phải nộp báo cáo.' },
+      { japanese: 'パスポート を 見せなければ なりません。', kana: 'ぱすぽーとをみせなければなりません。', romaji: 'Pasupooto o misenakereba narimasen.', vietnamese: 'Bạn phải xuất trình hộ chiếu.' },
     ],
     commonMistakes: [
-      'Phát âm vấp cụm dài: "nakerebanarimasen" - Hãy luyện tập ngắt nhịp: nakereba / narimasen.',
+      'Phát âm vấp cụm dài "nakerebanarimasen" - Hãy luyện ngắt nhịp: nakereba / narimasen.',
     ],
     lessonId: 'minna-bai-17-the-nai-bat-buoc',
     jlptLevel: 'N5',
   },
   {
+    id: 'g-19b',
+    pattern: 'V(thể ない bỏ い) + くてもいいです',
+    title: 'Không cần làm V cũng được',
+    meaning: 'Không bắt buộc phải làm',
+    vietnameseExplanation: 'Động từ thể ない bỏ い thêm くてもいいです. Mẫu câu biểu thị sự không cần thiết hoặc miễn nghĩa vụ.',
+    formationRules: ['V-ない (bỏ い) + くてもいいです'],
+    whenToUse: 'Ngày mai được nghỉ nên không cần dậy sớm, hôm nay không cần trả tiền.',
+    examples: [
+      { japanese: 'あした は 休みですから、早く 起きなくても いいです。', kana: 'あしたはやすみですから、はやくおきなくてもいいです。', romaji: 'Ashita wa yasumi desu kara, hayaku okinakute mo ii desu.', vietnamese: 'Vì ngày mai là ngày nghỉ nên không cần dậy sớm cũng được.' },
+      { japanese: '靴 を 脱がなくても いいです。', kana: 'くつをぬがなくてもいいです。', romaji: 'Kutsu o nuganakute mo ii desu.', vietnamese: 'Không cần cởi giày cũng được.' },
+      { japanese: '心配しなくても いいですよ。', kana: 'しんぱいしなくてもいいですよ。', romaji: 'Shinpai shinakute mo ii desu yo.', vietnamese: 'Không cần lo lắng đâu nhé.' },
+    ],
+    commonMistakes: [
+      'Nhầm với 〜てはいけません (không được làm) - Mẫu câu này là "không cần làm cũng được".',
+    ],
+    lessonId: 'minna-bai-17-the-nai-bat-buoc',
+    jlptLevel: 'N5',
+  },
+
+  // --- BÀI 18 ---
+  {
+    id: 'g-19c',
+    pattern: 'V-る(thể từ điển) ことが できます',
+    title: 'Khả năng, năng lực: Có thể làm V',
+    meaning: 'Có thể làm được việc gì',
+    vietnameseExplanation: 'Biến động từ thành một danh từ bằng cách thêm ことができる. Dùng để nói về khả năng cá nhân hoặc hoàn cảnh cho phép làm việc gì.',
+    formationRules: ['V(thể từ điển 辞書形) + ことが できます'],
+    whenToUse: 'Nói biết bơi, biết lái xe, có thể thanh toán bằng thẻ tín dụng.',
+    examples: [
+      { japanese: 'ミラーさん は 漢字 を 読む ことが できます。', kana: 'みらーさんはかんじをよむことができます。', romaji: 'Miraa-san wa kanji o yomu koto ga dekimasu.', vietnamese: 'Anh Miller có thể đọc được chữ Hán.' },
+      { japanese: 'この ホテル で クレジットカード を 使う ことが できます。', kana: 'このほてるでくれじっとかーどをつかうことができます。', romaji: 'Kono hoteru de kurejitto kaado o tsukau koto ga dekimasu.', vietnamese: 'Ở khách sạn này có thể dùng thẻ tín dụng.' },
+      { japanese: '泳ぐ ことが できません。', kana: 'およぐことができません。', romaji: 'Oyogu koto ga dekimasen.', vietnamese: 'Tôi không biết bơi.' },
+    ],
+    commonMistakes: [
+      'Dùng động từ thể ます trước ことができます (Ví dụ: "よみます ことが できます" là sai!).',
+    ],
+    lessonId: 'minna-bai-17-the-nai-bat-buoc',
+    jlptLevel: 'N5',
+  },
+  {
+    id: 'g-19d',
+    pattern: 'V1-る(thể từ điển) / N の 前に V2',
+    title: 'Trước khi làm việc gì: Mae ni',
+    meaning: 'Trước khi làm V1 thì làm V2',
+    vietnameseExplanation: 'Trước 前に luôn là ĐỘNG TỪ NGUYÊN MẪU (thể từ điển) hoặc DANH TỪ CÓ TRỢ TỪ の. Bất kể câu kết thúc ở thì quá khứ hay tương lai, vế trước 前に luôn ở thể nguyên mẫu.',
+    formationRules: [
+      'V(thể từ điển) + 前に、V2',
+      'Danh từ + の + 前に、V2',
+    ],
+    whenToUse: 'Trước khi ăn cơm phải rửa tay, trước khi đi ngủ đọc sách.',
+    examples: [
+      { japanese: 'ごはん を 食べる 前に、手 を 洗います。', kana: 'ごはんをたべるまえに、てをあらいます。', romaji: 'Gohan o taberu mae ni, te o araimasu.', vietnamese: 'Trước khi ăn cơm, tôi rửa tay.' },
+      { japanese: '寝る 前に、本 を 読みます。', kana: 'ねるまえに、ほんをよみます。', romaji: 'Neru mae ni, hon o yomimasu.', vietnamese: 'Trước khi đi ngủ tôi đọc sách.' },
+      { japanese: '旅行 の 前に、切符 を 買いました。', kana: 'りょこうのまえに、きっぷをかいannamashita。', romaji: 'Ryokou no mae ni, kippu o kaimashita.', vietnamese: 'Trước chuyến du lịch, tôi đã mua vé.' },
+    ],
+    commonMistakes: [
+      'Chia vế trước sang quá khứ: "たべた まえに" - Sai hoàn toàn! Luôn là thể từ điển: "たべる まえに".',
+    ],
+    lessonId: 'minna-bai-17-the-nai-bat-buoc',
+    jlptLevel: 'N5',
+  },
+
+  // --- BÀI 19 ---
+  {
     id: 'g-20',
     pattern: 'V(thể た) + ことが あります',
     title: 'Kinh nghiệm đã từng: Đã từng làm V',
     meaning: 'Đã từng trải qua hành động V trong quá khứ',
-    vietnameseExplanation: 'Dùng thể た (quá khứ ngắn) kết hợp ことがあります để nhấn mạnh trải nghiệm cuộc đời.',
+    vietnameseExplanation: 'Dùng thể た (quá khứ ngắn) kết hợp ことがあります để nhấn mạnh trải nghiệm cuộc đời tính đến hiện tại.',
     formationRules: ['V(thể た) + ことが あります / ありません'],
     whenToUse: 'Hỏi xem bạn bè đã từng đi Nhật chưa, từng ăn sushi chưa.',
     examples: [
-      { japanese: '日本 へ いった ことが ありますか。', kana: 'にほんへいったことがありますか。', romaji: 'Nihon e itta koto ga arimasu ka.', vietnamese: 'Bạn đã từng đi Nhật Bản chưa?' },
-      { japanese: 'いいえ、いちど も ありません。', kana: 'いいえ、いちどもありません。', romaji: 'Iie, ichido mo arimasen.', vietnamese: 'Chưa, tôi chưa từng đi lần nào cả.' },
+      { japanese: '日本 へ 行った ことが ありますか。', kana: 'にほんへいったことがありますか。', romaji: 'Nihon e itta koto ga arimasu ka.', vietnamese: 'Bạn đã từng đi Nhật Bản chưa?' },
+      { japanese: 'いいえ、一度 も ありません。', kana: 'いいえ、いちどもありません。', romaji: 'Iie, ichido mo arimasen.', vietnamese: 'Chưa, tôi chưa từng đi lần nào cả.' },
+      { japanese: 'さしみ を たべた ことが あります。', kana: 'さしみをたべたことがあります。', romaji: 'Sashimi o tabeta koto ga arimasu.', vietnamese: 'Tôi đã từng ăn món sashimi rồi.' },
     ],
     commonMistakes: [
-      'Dùng cho việc vừa làm sáng nay - Sai! Mẫu câu này chỉ dùng cho kinh nghiệm, không dùng cho sự việc vừa mới làm.',
+      'Dùng cho việc vừa làm sáng nay - Sai! Mẫu câu này chỉ dùng cho kinh nghiệm cuộc đời, không dùng cho sinh hoạt nhật thường.',
     ],
     lessonId: 'minna-bai-19-the-ta-kinh-nghiem',
     jlptLevel: 'N5',
   },
-];
+  {
+    id: 'g-20b',
+    pattern: 'V1-たり、V2-たり します',
+    title: 'Liệt kê hành động tiêu biểu: Khi thì... khi thì...',
+    meaning: 'Làm những việc như là V1, V2...',
+    vietnameseExplanation: 'Động từ chia về thể た thêm り. Dùng để liệt kê một vài hành động tiêu biểu mà không quan tâm đến thứ tự thời gian xảy ra trước sau.',
+    formationRules: ['V1(thể た)り、V2(thể た)り します / しました。'],
+    whenToUse: 'Kể về hoạt động cuối tuần: khi thì đọc sách, khi thì đi xem phim.',
+    examples: [
+      { japanese: '日曜日 は 本 を 読んだり、映画 を 見たり します。', kana: 'にちようびはほんをよんだり、えいがをみたりします。', romaji: 'Nichiyoubi wa hon o yondari, eiga o mitari shimasu.', vietnamese: 'Chủ nhật tôi khi thì đọc sách, khi thì xem phim.' },
+      { japanese: '休み の 日 は 掃除 したり、洗濯 したり しました。', kana: 'やすみのひはそうじしたり、せんたくしたりしました。', romaji: 'Yasumi no hi wa souji shitari, sentaku shitari shimashita.', vietnamese: 'Ngày nghỉ tôi đã dọn dẹp, giặt giũ đồ đạc.' },
+    ],
+    commonMistakes: [
+      'Quên động từ します ở cuối câu.',
+    ],
+    lessonId: 'minna-bai-19-the-ta-kinh-nghiem',
+    jlptLevel: 'N5',
+  },
 
+  // --- BÀI 20: THỂ THÔNG THƯỜNG ---
+  {
+    id: 'g-20c',
+    pattern: 'Thể thông thường (普通体 - Futsukei)',
+    title: 'Hệ thống Thể thông thường (Thể ngắn)',
+    meaning: 'Giao tiếp thân mật giữa bạn bè, người trong gia đình',
+    vietnameseExplanation: 'Chuyển đổi từ thể lịch sự (Masu/Desu) sang thể ngắn:\n- Động từ: V-ます -> V-る (từ điển), V-ません -> V-ない, V-ました -> V-た, V-ませんでした -> V-なかった\n- Tính từ đuôi い: Bỏ です giữ nguyên đuôi.\n- Tính từ đuôi な & Danh từ: です -> だ; じゃありません -> じゃない; でした -> だった; じゃありませんでした -> じゃなかった.',
+    formationRules: ['Bỏ ます / です chuyển về dạng nguyên thể'],
+    whenToUse: 'Nói chuyện thân mật với bạn bè, viết nhật ký cá nhân, và dùng làm mệnh đề bổ ngữ.',
+    examples: [
+      { japanese: 'あした どこ へ 行く？', kana: 'あしたどこへいく？', romaji: 'Ashita doko e iku?', vietnamese: 'Mai đi đâu đấy? (Thân mật)' },
+      { japanese: 'スーパー へ 行くよ。', kana: 'すーぱーへいくよ。', romaji: 'Suupaa e iku yo.', vietnamese: 'Đi siêu thị nè.' },
+      { japanese: 'きのう の 映画、おもしろかった？', kana: 'きのうのえいが、おもしろかった？', romaji: 'Kinou no eiga, omoshirokatta?', vietnamese: 'Phim hôm qua hay không?' },
+    ],
+    commonMistakes: [
+      'Dùng thể ngắn với cấp trên, giáo viên hoặc người lạ lần đầu gặp mặt - Rất khiếm nhã!',
+    ],
+    lessonId: 'minna-bai-20-the-thong-thuong',
+    jlptLevel: 'N5',
+  },
+
+  // --- BÀI 21-25: NÂNG CAO N5 ---
+  {
+    id: 'g-21',
+    pattern: 'Thể thông thường + と 思います (to omoimasu)',
+    title: 'Bày tỏ quan điểm: Tôi nghĩ rằng...',
+    meaning: 'Nêu suy nghĩ, dự đoán của bản thân',
+    vietnameseExplanation: 'Đứng trước と 思います BẮT BUỘC phải là THỂ THÔNG THƯỜNG (Futsukei). Lưu ý tính từ đuôi な và danh từ phải có だ trước と.',
+    formationRules: ['Thể thông thường + と 思います'],
+    whenToUse: 'Bày tỏ ý kiến cá nhân, dự đoán thời tiết hay tình huống.',
+    examples: [
+      { japanese: 'あした は 雨 が 降る と 思います。', kana: 'あしたはあめがふるとおもいます。', romaji: 'Ashita wa ame ga furu to omoimasu.', vietnamese: 'Tôi nghĩ rằng ngày mai trời sẽ mưa.' },
+      { japanese: '日本 の 物価 は 高い と 思います。', kana: 'にほんのぶっかはたかいとおもいます。', romaji: 'Nihon no bukka wa takai to omoimasu.', vietnamese: 'Tôi nghĩ rằng giá cả ở Nhật Bản đắt đỏ.' },
+      { japanese: 'たなかさん は 来ない と 思います。', kana: 'たなかさんはこないとおもいます。', romaji: 'Tanaka-san wa konai to omoimasu.', vietnamese: 'Tôi nghĩ anh Tanaka sẽ không đến đâu.' },
+    ],
+    commonMistakes: [
+      'Dùng thể lịch sự trước と: "あめがふります と 思います" -> Sai!',
+    ],
+    lessonId: 'tuan-11-tong-on-tu-vung-ngu-phap',
+    jlptLevel: 'N5',
+  },
+  {
+    id: 'g-22',
+    pattern: 'Thể thông thường + N (Mệnh đề bổ nghĩa cho danh từ)',
+    title: 'Định ngữ: Mệnh đề bổ nghĩa cho danh từ',
+    meaning: 'Người mà... / Món đồ mà... / Nơi mà...',
+    vietnameseExplanation: 'Trong tiếng Nhật, mệnh đề bổ nghĩa LUÔN ĐỨNG TRƯỚC danh từ chính (ngược lại hoàn toàn với tiếng Việt). Động từ trong mệnh đề bổ nghĩa luôn ở THỂ THÔNG THƯỜNG. Chủ ngữ trong mệnh đề bổ nghĩa đi với trợ từ が chứ không dùng は.',
+    formationRules: ['Mệnh đề (Thể thông thường, chủ ngữ đi với が) + Danh từ chính'],
+    whenToUse: 'Miêu tả "người đang nói chuyện", "bức tranh anh Tanaka vẽ", "nơi tôi đã sinh ra".',
+    examples: [
+      { japanese: 'あそこ で 本 を 読んで いる 人 は だれ ですか。', kana: 'あそこでほんをよんでいるひとはだれですか。', romaji: 'Asoko de hon o yonde iru hito wa dare desu ka.', vietnamese: 'Người đang đọc sách đằng kia là ai vậy?' },
+      { japanese: 'これ は 母 が 作った 料理 です。', kana: 'これはははがつくりょうりです。', romaji: 'Kore wa haha ga tsukutta ryouri desu.', vietnamese: 'Đây là món ăn mẹ tôi đã nấu.' },
+      { japanese: 'わたし が 生まれた 所 は きれいな まち です。', kana: 'わたしがうまれたところはきれいなまちです。', romaji: 'Watashi ga umareta tokoro wa kireina machi desu.', vietnamese: 'Nơi tôi sinh ra là một thị trấn đẹp.' },
+    ],
+    commonMistakes: [
+      'Dùng trợ từ は cho chủ ngữ phụ trong mệnh đề: "母 は 作った 料理" -> Sai! Phải là "母 が 作った 料理".',
+    ],
+    lessonId: 'tuan-11-tong-on-tu-vung-ngu-phap',
+    jlptLevel: 'N5',
+  },
+  {
+    id: 'g-23',
+    pattern: 'V-る / V-ない / V-た / V-なかった + とき (toki)',
+    title: 'Khi làm việc gì: Toki',
+    meaning: 'Khi, lúc làm gì',
+    vietnameseExplanation: 'とき biểu thị thời điểm. Nếu hành động ở vế trước chưa xảy ra khi hành động vế sau diễn ra thì dùng V-る. Nếu hành động vế trước đã hoàn thành rồi mới làm vế sau thì dùng V-た.',
+    formationRules: [
+      'Động từ (thể từ điển / thể ない / thể た) + とき',
+      'Tính từ đuôi い + とき',
+      'Tính từ đuôi な + な + とき',
+      'Danh từ + の + とき',
+    ],
+    whenToUse: 'Khi không hiểu thì hỏi thầy, khi buồn thì nghe nhạc, khi còn bé.',
+    examples: [
+      { japanese: 'わからない とき、先生 に 聞きます。', kana: 'わからないとき、せんせいにききます。', romaji: 'Wakaranai toki, sensei ni kikimasu.', vietnamese: 'Khi không hiểu, tôi hỏi thầy giáo.' },
+      { japanese: '暇な とき、音楽 を 聞きます。', kana: 'ひまなとき、おんがくをききます。', romaji: 'Himana toki, ongaku o kikimasu.', vietnamese: 'Khi rảnh rỗi tôi nghe nhạc.' },
+      { japanese: '子どもの とき、よく 川 で 泳ぎました。', kana: 'こどものとき、よくかわでおよぎました。', romaji: 'Kodomo no toki, yoku kawa de oyogimashita.', vietnamese: 'Hồi còn bé, tôi rất hay bơi ở sông.' },
+    ],
+    commonMistakes: [
+      'Quên trợ từ の sau danh từ: "こども とき" -> Sai! Phải là "こどもの とき".',
+    ],
+    lessonId: 'tuan-11-tong-on-tu-vung-ngu-phap',
+    jlptLevel: 'N5',
+  },
+  {
+    id: 'g-24',
+    pattern: 'V-たら / Adj-かったら (Điều kiện giả định & Sau khi)',
+    title: 'Câu điều kiện たら (Tara): Nếu / Sau khi',
+    meaning: 'Nếu... thì... / Sau khi... thì...',
+    vietnameseExplanation: 'Động từ, tính từ chia về thể quá khứ ngắn (thể た) thêm ら. Biểu thị điều kiện giả định "Nếu" hoặc sau khi một điều chắc chắn xảy ra thì sẽ làm gì.',
+    formationRules: ['V(thể た) + ら、Mệnh đề kết quả'],
+    whenToUse: 'Nếu ngày mai trời đẹp tôi sẽ đi chơi, sau khi đến ga hãy gọi cho tôi.',
+    examples: [
+      { japanese: '雨 が 降ったら、出かけません。', kana: 'あめがふったら、でかけません。', romaji: 'Ame ga futtara, dekakemasen.', vietnamese: 'Nếu trời mưa thì tôi không ra ngoài.' },
+      { japanese: '駅 に 着いたら、電話して ください。', kana: 'えきについたら、でんわしてください。', romaji: 'Eki ni tsuitara, denwashite kudasai.', vietnamese: 'Sau khi đến ga thì hãy gọi điện cho tôi nhé.' },
+      { japanese: '安かったら、買います。', kana: 'やすかったら、かいます。', romaji: 'Yasukattara, kaimasu.', vietnamese: 'Nếu rẻ thì tôi sẽ mua.' },
+    ],
+    commonMistakes: [
+      'Chia sai thể Ta của động từ trước khi thêm ra.',
+    ],
+    lessonId: 'tuan-11-tong-on-tu-vung-ngu-phap',
+    jlptLevel: 'N5',
+  },
+  {
+    id: 'g-25',
+    pattern: 'V-ても / Adj-くても / Adj-でも (Dù... nhưng...)',
+    title: 'Mẫu câu nhượng bộ ても (Temo): Dù... thì vẫn...',
+    meaning: 'Dù cho... thì vẫn...',
+    vietnameseExplanation: 'Động từ thể て thêm も. Tính từ đuôi い đổi thành くても. Tính từ đuôi な và danh từ thêm でも. Biểu thị một kết quả trái ngược với dự đoán thông thường.',
+    formationRules: [
+      'V(thể て) + も',
+      'Tính từ đuôi い (bỏ い) + くても',
+      'Tính từ đuôi な / Danh từ + でも',
+    ],
+    whenToUse: 'Dù mưa vẫn đi, dù đắt vẫn mua, dù khó vẫn cố gắng học.',
+    examples: [
+      { japanese: '雨 が 降って も、サッカー を します。', kana: 'あめがふっても、さっかーをします。', romaji: 'Ame ga futte mo, sakkaa o shimasu.', vietnamese: 'Dù trời mưa chúng tôi vẫn đá bóng.' },
+      { japanese: '高くても、この パソコン が 買いたい です。', kana: 'たかくても、このぱそこんがかいたいです。', romaji: 'Takakute mo, kono pasokon ga kaitai desu.', vietnamese: 'Dù đắt thì tôi vẫn muốn mua chiếc máy tính này.' },
+      { japanese: '日曜日 でも、仕事 を しなければ なりません。', kana: 'にちようびでも、しごとをしなければなりません。', romaji: 'Nichiyoubi demo, shigoto o shinakereba narimasen.', vietnamese: 'Dù là Chủ nhật thì tôi vẫn phải làm việc.' },
+    ],
+    commonMistakes: [
+      'Dùng nhầm trợ từ: "あめでも" thay vì "あめがふっても".',
+    ],
+    lessonId: 'tuan-11-tong-on-tu-vung-ngu-phap',
+    jlptLevel: 'N5',
+  },
+];

@@ -299,6 +299,49 @@ export default function RoadmapPage() {
                             </div>
                           </div>
 
+                          {/* Quick Skill Resources Interlinked */}
+                          <div className="bg-amber-50/60 p-3.5 rounded-xl border border-amber-200/70">
+                            <div className="flex items-center justify-between flex-wrap gap-2 mb-2">
+                              <span className="text-xs font-bold text-amber-900 flex items-center gap-1.5">
+                                <Sparkles className="w-3.5 h-3.5 text-amber-600" />
+                                Tài nguyên bổ trợ cho Tuần {week.weekNumber}:
+                              </span>
+                              <span className="text-[11px] text-amber-700">Tự luyện thêm để nhớ lâu hơn</span>
+                            </div>
+                            <div className="flex flex-wrap gap-2 text-xs">
+                              <Link
+                                href="/grammar"
+                                className="px-2.5 py-1 rounded-lg bg-white border border-amber-200 text-stone-700 hover:text-[#D93829] hover:border-[#D93829] font-medium transition-colors"
+                              >
+                                📖 Ngữ pháp liên quan
+                              </Link>
+                              <Link
+                                href="/vocabulary"
+                                className="px-2.5 py-1 rounded-lg bg-white border border-amber-200 text-stone-700 hover:text-[#D93829] hover:border-[#D93829] font-medium transition-colors"
+                              >
+                                📇 Flashcard Từ vựng
+                              </Link>
+                              <Link
+                                href="/kanji"
+                                className="px-2.5 py-1 rounded-lg bg-white border border-amber-200 text-stone-700 hover:text-[#D93829] hover:border-[#D93829] font-medium transition-colors"
+                              >
+                                ✍️ Kanji sơ cấp
+                              </Link>
+                              <Link
+                                href="/listening"
+                                className="px-2.5 py-1 rounded-lg bg-white border border-amber-200 text-stone-700 hover:text-[#D93829] hover:border-[#D93829] font-medium transition-colors"
+                              >
+                                🎧 Luyện nghe hội thoại
+                              </Link>
+                              <Link
+                                href="/reading"
+                                className="px-2.5 py-1 rounded-lg bg-white border border-amber-200 text-stone-700 hover:text-[#D93829] hover:border-[#D93829] font-medium transition-colors"
+                              >
+                                📑 Luyện đọc hiểu
+                              </Link>
+                            </div>
+                          </div>
+
                           {/* Daily Study Schedule (Day 1 - 7) */}
                           <div className="space-y-3">
                             <h4 className="text-xs font-bold text-stone-700 uppercase tracking-wider flex items-center gap-1.5">

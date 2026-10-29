@@ -1,6 +1,6 @@
 'use client';
 
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import Link from 'next/link';
 import {
   BookMarked,
@@ -10,7 +10,8 @@ import {
   Sparkles,
   ArrowRight,
   AlertTriangle,
-  HelpCircle,
+  CheckCircle2,
+  Filter,
 } from 'lucide-react';
 import { GRAMMAR_LIBRARY } from '@/data/grammar';
 import { speakJapanese } from '@/lib/utils';
@@ -18,11 +19,36 @@ import { isBookmarked, toggleBookmark } from '@/lib/storage';
 import { GrammarItem } from '@/types';
 
 export default function GrammarPage() {
+  const [mounted, setMounted] = useState(false);
   const [searchQuery, setSearchQuery] = useState('');
   const [selectedItem, setSelectedItem] = useState<GrammarItem>(GRAMMAR_LIBRARY[0]);
   const [bookmarkedList, setBookmarkedList] = useState<Record<string, boolean>>({});
+  const [learnedGrammar, setLearnedGrammar] = useState<Record<string, boolean>>({});
+  const [selectedFilter, setSelectedFilter] = useState<string>('all');
+
+  useEffect(() => {
+    setMounted(true);
+    if (typeof window !== 'undefined') {
+      try {
+        const stored = localStorage.getItem('nihongo_n5_learned_grammar');
+        if (stored) setLearnedGrammar(JSON.parse(stored));
+      } catch {}
+    }
+  }, []);
+
+  const toggleLearned = (id: string) => {
+    const updated = { ...learnedGrammar, [id]: !learnedGrammar[id] };
+    setLearnedGrammar(updated);
+    if (typeof window !== 'undefined') {
+      localStorage.setItem('nihongo_n5_learned_grammar', JSON.stringify(updated));
+    }
+  };
 
   const filteredGrammar = GRAMMAR_LIBRARY.filter((g) => {
+    if (selectedFilter !== 'all') {
+      if (selectedFilter === 'learned' && !learnedGrammar[g.id]) return false;
+      if (selectedFilter === 'unlearned' && learnedGrammar[g.id]) return false;
+    }
     if (!searchQuery.trim()) return true;
     const q = searchQuery.toLowerCase();
     return (
@@ -44,40 +70,100 @@ export default function GrammarPage() {
     setBookmarkedList((prev) => ({ ...prev, [item.id]: res }));
   };
 
+  if (!mounted) {
+    return <div className="p-8 max-w-6xl mx-auto animate-pulse h-96 bg-stone-200/60 rounded-3xl" />;
+  }
+
+  const isLearned = !!learnedGrammar[selectedItem.id];
+  const learnedCount = Object.values(learnedGrammar).filter(Boolean).length;
+
   return (
     <div className="space-y-8 max-w-6xl pb-20">
       {/* Header */}
-      <div>
-        <div className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-emerald-50 text-emerald-700 text-xs font-bold mb-2">
-          <BookMarked className="w-3.5 h-3.5" />
-          Thư viện ngữ pháp
+      <div className="flex flex-col md:flex-row md:items-center justify-between gap-4">
+        <div>
+          <div className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-emerald-50 text-emerald-700 text-xs font-bold mb-2">
+            <BookMarked className="w-3.5 h-3.5" />
+            Thư viện ngữ pháp sơ cấp
+          </div>
+          <h1 className="text-3xl font-extrabold text-stone-900 tracking-tight">
+            Ngữ Pháp Tiếng Nhật N5 Toàn Tập ({GRAMMAR_LIBRARY.length} cấu trúc)
+          </h1>
+          <p className="text-stone-600 text-sm mt-1">
+            Bao phủ trọn vẹn ngữ pháp từ Bài 1 đến Bài 25 chuẩn giáo trình Minna no Nihongo I và kỳ thi JLPT N5.
+          </p>
         </div>
-        <h1 className="text-3xl font-extrabold text-stone-900 tracking-tight">
-          Ngữ Pháp Tiếng Nhật N5 Toàn Tập
-        </h1>
-        <p className="text-stone-600 text-sm mt-1">
-          Hệ thống 25 bài ngữ pháp sơ cấp theo khung giáo trình chuẩn Minna no Nihongo, giải thích chi tiết dưới góc nhìn người Việt.
-        </p>
+
+        <div className="px-4 py-2.5 bg-white rounded-2xl border border-[#E8E2D5] text-xs flex items-center gap-3 shrink-0 shadow-xs">
+          <div>
+            <span className="text-stone-500">Đã nắm vững: </span>
+            <span className="font-bold text-stone-900">
+              {learnedCount} / {GRAMMAR_LIBRARY.length} mẫu
+            </span>
+          </div>
+          <div className="w-20 bg-stone-100 h-2 rounded-full overflow-hidden">
+            <div
+              className="bg-emerald-600 h-full rounded-full transition-all"
+              style={{
+                width: `${Math.round((learnedCount / GRAMMAR_LIBRARY.length) * 100)}%`,
+              }}
+            />
+          </div>
+        </div>
       </div>
 
       {/* Main 2-column layout */}
       <div className="grid grid-cols-1 lg:grid-cols-12 gap-6 items-start">
         {/* Left Column: List & Search */}
-        <div className="lg:col-span-5 bg-white rounded-3xl border border-[#E8E2D5] p-5 shadow-xs space-y-4">
+        <div className="lg:col-span-5 bg-white rounded-3xl border border-[#E8E2D5] p-5 shadow-xs space-y-3">
           <div className="relative">
             <Search className="w-4 h-4 text-stone-500 absolute left-3 top-1/2 -translate-y-1/2" />
             <input
               type="text"
-              placeholder="Tìm kiếm mẫu ngữ pháp..."
+              placeholder="Tìm theo mẫu câu, trợ từ, ý nghĩa..."
               value={searchQuery}
               onChange={(e) => setSearchQuery(e.target.value)}
               className="w-full pl-9 pr-3 py-2 rounded-xl border border-stone-200 text-xs focus:outline-none focus:border-[#D93829]"
             />
           </div>
 
+          <div className="flex items-center gap-1.5 pb-1">
+            <button
+              onClick={() => setSelectedFilter('all')}
+              className={`px-3 py-1 rounded-lg text-xs font-semibold ${
+                selectedFilter === 'all'
+                  ? 'bg-stone-900 text-white'
+                  : 'bg-stone-100 text-stone-600 hover:bg-stone-200'
+              }`}
+            >
+              Tất cả ({GRAMMAR_LIBRARY.length})
+            </button>
+            <button
+              onClick={() => setSelectedFilter('learned')}
+              className={`px-3 py-1 rounded-lg text-xs font-semibold ${
+                selectedFilter === 'learned'
+                  ? 'bg-emerald-700 text-white'
+                  : 'bg-stone-100 text-stone-600 hover:bg-stone-200'
+              }`}
+            >
+              Đã học ({learnedCount})
+            </button>
+            <button
+              onClick={() => setSelectedFilter('unlearned')}
+              className={`px-3 py-1 rounded-lg text-xs font-semibold ${
+                selectedFilter === 'unlearned'
+                  ? 'bg-rose-700 text-white'
+                  : 'bg-stone-100 text-stone-600 hover:bg-stone-200'
+              }`}
+            >
+              Chưa học ({GRAMMAR_LIBRARY.length - learnedCount})
+            </button>
+          </div>
+
           <div className="space-y-1.5 max-h-[600px] overflow-y-auto pr-1">
             {filteredGrammar.map((item) => {
               const isSelected = selectedItem.id === item.id;
+              const learned = !!learnedGrammar[item.id];
               return (
                 <div
                   key={item.id}
@@ -96,7 +182,11 @@ export default function GrammarPage() {
                     >
                       {item.pattern}
                     </span>
-                    <span className="text-[10px] text-stone-500 font-medium">N5</span>
+                    {learned && (
+                      <span className="text-[10px] text-emerald-700 font-bold bg-emerald-100/70 px-1.5 py-0.2 rounded">
+                        ✓ Đã học
+                      </span>
+                    )}
                   </div>
                   <div className="text-xs font-semibold text-stone-800 line-clamp-1">
                     {item.title}
@@ -123,19 +213,33 @@ export default function GrammarPage() {
               <h3 className="text-sm font-bold text-stone-700">{selectedItem.title}</h3>
             </div>
 
-            <button
-              onClick={() => handleToggleFav(selectedItem)}
-              className="p-2.5 rounded-2xl bg-stone-100 text-stone-600 hover:text-amber-500 hover:bg-amber-50 transition-colors shrink-0"
-              title="Lưu ngữ pháp"
-            >
-              <Bookmark
-                className={`w-5 h-5 ${
-                  bookmarkedList[selectedItem.id] || isBookmarked(selectedItem.id)
-                    ? 'fill-amber-500 text-amber-500'
-                    : ''
+            <div className="flex items-center gap-2">
+              <button
+                onClick={() => toggleLearned(selectedItem.id)}
+                className={`px-3 py-1.5 rounded-xl text-xs font-semibold flex items-center gap-1 transition-colors ${
+                  isLearned
+                    ? 'bg-emerald-600 text-white'
+                    : 'bg-stone-100 text-stone-700 hover:bg-stone-200'
                 }`}
-              />
-            </button>
+              >
+                <CheckCircle2 className="w-3.5 h-3.5" />
+                <span>{isLearned ? 'Đã thuộc' : 'Đánh dấu đã học'}</span>
+              </button>
+
+              <button
+                onClick={() => handleToggleFav(selectedItem)}
+                className="p-2.5 rounded-xl bg-stone-100 text-stone-600 hover:text-amber-500 hover:bg-amber-50 transition-colors"
+                title="Lưu ngữ pháp"
+              >
+                <Bookmark
+                  className={`w-4 h-4 ${
+                    bookmarkedList[selectedItem.id] || isBookmarked(selectedItem.id)
+                      ? 'fill-amber-500 text-amber-500'
+                      : ''
+                  }`}
+                />
+              </button>
+            </div>
           </div>
 
           {/* Explanation */}
@@ -166,7 +270,7 @@ export default function GrammarPage() {
           {/* Examples */}
           <div className="space-y-3">
             <h4 className="text-xs font-bold text-stone-700 uppercase tracking-wide">
-              Ví dụ mẫu thực tế:
+              Ví dụ mẫu thực tế ({selectedItem.examples.length} ví dụ):
             </h4>
             <div className="space-y-2.5">
               {selectedItem.examples.map((ex, idx) => (
@@ -233,4 +337,3 @@ export default function GrammarPage() {
     </div>
   );
 }
-

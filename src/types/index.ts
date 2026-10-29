@@ -23,7 +23,26 @@ export interface VocabularyItem {
   reading: string; // Hiragana / Katakana
   romaji?: string;
   meaning: string; // Tiếng Việt
-  wordType: 'danh từ' | 'động từ' | 'tính từ -i' | 'tính từ -na' | 'phó từ' | 'liên từ' | 'cụm từ' | 'trợ từ';
+  wordType:
+    | 'danh từ'
+    | 'động từ'
+    | 'động từ nhóm 1'
+    | 'động từ nhóm 2'
+    | 'động từ nhóm 3'
+    | 'tính từ -i'
+    | 'tính từ -na'
+    | 'tính từ い'
+    | 'tính từ な'
+    | 'phó từ'
+    | 'trạng từ'
+    | 'liên từ'
+    | 'cụm từ'
+    | 'trợ từ'
+    | 'số từ'
+    | 'đại từ'
+    | 'thể từ'
+    | 'hậu tố'
+    | 'từ để hỏi';
   exampleSentence: string;
   exampleReading: string;
   exampleMeaning: string;
