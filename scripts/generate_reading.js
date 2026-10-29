@@ -182,3 +182,4 @@ export const READING_PASSAGES: ReadingPassage[] = ${JSON.stringify(READING_PASSA
 
 fs.writeFileSync(outputFile, fileContent);
 console.log('Successfully wrote ' + READING_PASSAGES.length + ' reading passages to reading.ts');
+

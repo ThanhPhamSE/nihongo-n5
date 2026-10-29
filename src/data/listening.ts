@@ -216,4 +216,312 @@ export const LISTENING_LESSONS: ListeningDialogue[] = [
     "correctIndex": 2,
     "explanation": "Khách hàng nói rõ: \"４名で、７時半からです\" (4 người, từ 7 giờ rưỡi)."
   }
+,
+  // === 18 bài hội thoại bổ sung đạt 30 bài luyện nghe N5 ===
+  {
+  "id": "lis-13",
+  "title": "Hội thoại 13: Hỏi số điện thoại và trao đổi liên lạc",
+  "situation": "Hai bạn sinh viên mới quen trao đổi số điện thoại để liên lạc học nhóm.",
+  "audioScriptJa": "男の人：アンさん、電話番号は何番ですか。女の人：ゼロ九ゼロ、一二三四、五六七八です。男の人：ゼロ九ゼロ、一二三四、五六七八ですね。女の人：はい、そうです。男の人：ありがとう。今夜 メッセージを 送りますね。",
+  "audioScriptKana": "おとこのひと：あんさん、でんわばんごうは なんばんですか。おんなのひと：ぜろきゅうぜろ、いちにさんよん、ごろくななはちです。おとこのひと：ぜろきゅうぜろ、いちにさんよん、ごろくななはちですね。おんなのひと：はい、そうです。おとこのひと：ありがとう。こんや めっせーじを おくりますね。",
+  "audioScriptVi": "Nam: An ơi, số điện thoại của bạn là bao nhiêu thế? / An: Là 090-1234-5678 nhé. / Nam: 090-1234-5678 đúng không? / An: Ừ, đúng rồi. / Nam: Cảm ơn nhé. Tối nay mình nhắn tin cho bạn nha.",
+  "question": "アンさんの 電話番号は どれですか。 (Số điện thoại của bạn An là số nào?)",
+  "options": [
+    "090-1234-5678",
+    "080-1234-5678",
+    "090-4321-8765",
+    "090-1234-8888"
+  ],
+  "correctIndex": 0,
+  "explanation": "Bạn An đọc rõ ràng số điện thoại: ゼロ九ゼロ (090), 一二三四 (1234), 五六七八 (5678)."
+},
+  {
+  "id": "lis-14",
+  "title": "Hội thoại 14: Hỏi đường tới bảo tàng mỹ thuật",
+  "situation": "Du khách hỏi một cụ già đi dạo đường đi đến bảo tàng mỹ thuật gần nhất.",
+  "audioScriptJa": "男の人：すみません。美術館へ 行きたいんですが、どう行けば いいですか。おじいさん：まっすぐ 行って、二つ目の 信号を 左へ 曲がってください。大きな 公園の 前に ありますよ。男の人：二つ目の 信号を 左ですね。歩いて 何分ぐらいですか。おじいさん：十分ぐらいですよ。",
+  "audioScriptKana": "おとこのひと：すみません。びじゅつかんへ いきたいんですが、どういけば いいですか。おじいさん：まっすぐ いって、ふたつめの しんごうを ひだりへ まがってください。おおきな こうえんの まえに ありますよ。おとこのひと：ふたつめの しんごうを ひだりですね。あるいて なんぷんぐらいですか。おじいさん：じゅっぷんぐらいですよ。",
+  "audioScriptVi": "Du khách: Xin lỗi bác, cháu muốn đến bảo tàng mỹ thuật thì đi thế nào ạ? / Cụ già: Cháu cứ đi thẳng, tới cột đèn giao thông thứ hai thì rẽ trái nhé. Nó nằm ngay trước công viên lớn. / Du khách: Rẽ trái ở cột đèn giao thông thứ hai ạ. Đi bộ mất khoảng mấy phút vậy bác? / Cụ già: Khoảng 10 phút thôi cháu à.",
+  "question": "美術館まで 歩いて どのくらい かかりますか。 (Đi bộ đến bảo tàng mỹ thuật mất khoảng bao lâu?)",
+  "options": [
+    "５分 (5 phút)",
+    "１０分 (10 phút)",
+    "２０分 (20 phút)",
+    "３０分 (30 phút)"
+  ],
+  "correctIndex": 1,
+  "explanation": "Cụ già trả lời: \"十分ぐらいですよ\" (Khoảng 10 phút thôi)."
+},
+  {
+  "id": "lis-15",
+  "title": "Hội thoại 15: Mua vé xem phim và chọn chỗ ngồi",
+  "situation": "Khách hàng mua vé xem phim tại quầy vé rạp Toho Cinema.",
+  "audioScriptJa": "店員：いらっしゃいませ。どの 映画を ご覧になりますか。女の人：２時からの「桜の記憶」を 大人２枚 お願いします。店員：お席は こちらの 画面から お選びください。女の人：真ん中の G-10 と G-11 で お願いします。店員：かしこまりました。お二人様で ３６００円です。",
+  "audioScriptKana": "てんいん：いらっしゃいませ。どの えいがを ごらんになりますか。おんなのひと：にじからの「さくらのきおく」を おとなにまい おねがいします。てんいん：おせきは こちらの がめんから おえらびください。おんなのひと：まんなかの じーじゅう と じーじゅういち で おねがいします。てんいん：かしこまりました。おふたりさまで さんぜんろっぴゃくえんです。",
+  "audioScriptVi": "Nhân viên: Kính chào quý khách. Quý khách muốn xem phim nào ạ? / Nữ: Cho tôi 2 vé người lớn suất 2 giờ phim \"Ký ức hoa anh đào\" nhé. / Nhân viên: Xin mời quý khách chọn chỗ trên màn hình này. / Nữ: Cho tôi hàng ghế giữa G-10 và G-11 nhé. / Nhân viên: Vâng, 2 người hết 3600 Yên ạ.",
+  "question": "映画の 切符は 全部で いくらですか。 (Tất cả vé phim hết bao nhiêu tiền?)",
+  "options": [
+    "１８００円 (1800 Yên)",
+    "２０００円 (2000 Yên)",
+    "３６００円 (3600 Yên)",
+    "４０００円 (4000 Yên)"
+  ],
+  "correctIndex": 2,
+  "explanation": "Nhân viên thông báo tổng tiền 2 người: \"３６００円 (さんぜんろっぴゃくえん) です\"."
+},
+  {
+  "id": "lis-16",
+  "title": "Hội thoại 16: Nhờ người qua đường chụp ảnh kỷ niệm",
+  "situation": "Một du khách nhờ người qua đường chụp ảnh trước cổng đền Asakusa Sensoji.",
+  "audioScriptJa": "女の人：すみません、シャッターを 押して いただけませんか。男の人：いいですよ。この ボタンですね。女の人：はい、赤い 門が 入るように お願いします。男の人：はい、チーズ！もう 一枚 撮りましょうか。女の人：ありがとうございます！とても きれいに 撮れています。",
+  "audioScriptKana": "おんなのひと：すみません、しゃったーを おして いただけませんか。おとこのひと：いいですよ。この ぼたんですね。おんなのひと：はい、あかい もんが はいるように おねがいします。おとこのひと：はい、ちーず！もう いちまい とりましょうか。おんなのひと：ありがとうございます！とても きれいに とれています。",
+  "audioScriptVi": "Nữ: Xin lỗi anh, anh bấm máy chụp ảnh giúp tôi được không ạ? / Nam: Được chứ bạn. Là nút này đúng không? / Nữ: Vâng, xin nhờ anh lấy góc thấy cả cánh cổng màu đỏ nhé. / Nam: Được rồi, cười lên nào! Có cần chụp thêm kiểu nữa không? / Nữ: Cảm ơn anh nhiều lắm! Ảnh chụp rất đẹp ạ.",
+  "question": "女の人は 何を 頼みましたか。 (Người phụ nữ đã nhờ vả điều gì?)",
+  "options": [
+    "道を 教えてもらう",
+    "写真を 撮ってもらう",
+    "荷物を 持ってもらう",
+    "時計を 見せてもらう"
+  ],
+  "correctIndex": 1,
+  "explanation": "Người phụ nữ nhờ chụp ảnh: \"シャッターを 押して いただけませんか\" (Anh bấm máy chụp ảnh giúp tôi được không ạ)."
+},
+  {
+  "id": "lis-17",
+  "title": "Hội thoại 17: Trả phòng khách sạn và thanh toán",
+  "situation": "Khách hàng hoàn tất thủ tục check-out tại quầy lễ tân khách sạn.",
+  "audioScriptJa": "フロント：おはようございます。チェックアウトでございますか。男の人：はい、３０５号室の グエンです。フロント：ありがとうございます。お部屋のお電話や 冷蔵庫の ご利用は ございますか。男の人：いいえ、ありません。フロント：かしこまりました。鍵を お預かりいたします。ご宿泊ありがとうございました。",
+  "audioScriptKana": "ふろんと：おはようございます。ちぇっくあうとでございますか。おとこのひと：はい、さんぜろごごうしつの ぐえんです。ふろんと：ありがとうございます。おへやの おでんわや れいぞうこの ごりようは ございますか。おとこのひと：いいえ、ありません。ふろんと：かしこまりました。かぎを おあずかりいたします。ごしゅくはく ありがとうございました。",
+  "audioScriptVi": "Lễ tân: Chào buổi sáng quý khách. Quý khách muốn trả phòng ạ? / Khách: Vâng, tôi là Nguyen phòng 305. / Lễ tân: Cảm ơn quý khách. Quý khách có dùng điện thoại bàn hay đồ trong tủ lạnh không ạ? / Khách: Dạ không có. / Lễ tân: Dạ vâng, tôi xin nhận lại chìa khóa. Cảm ơn quý khách đã lưu trú tại khách sạn chúng tôi.",
+  "question": "男の人の 部屋番号は 何番ですか。 (Số phòng của vị khách là phòng số mấy?)",
+  "options": [
+    "２０５号室",
+    "３０５号室",
+    "５０３号室",
+    "３１５号室"
+  ],
+  "correctIndex": 1,
+  "explanation": "Khách nói rõ ràng: \"３０５号室 (さんぜろごごうしつ) の グエンです\"."
+},
+  {
+  "id": "lis-18",
+  "title": "Hội thoại 18: Đi cắt tóc tại tiệm Salon Nhật",
+  "situation": "Khách hàng trao đổi với thợ làm tóc về kiểu tóc mong muốn.",
+  "audioScriptJa": "美容師：いらっしゃいませ。今日は どのように されますか。女の人：横を 少し 短くして、前髪は 眉毛の 下くらいで お願いします。美容師：かしこまりました。後ろの 長さは どうしますか。女の人：後ろは ２センチくらい 切ってください。美容師：わかりました。シャンプーから はじめますね。",
+  "audioScriptKana": "びようし：いらっしゃいませ。きょうは どのように されますか。おんなのひと：よこを すこし みじかくして、まえがみは まゆげの したくらいで おねがいします。びようし：かしこまりました。うしろの ながさは どうしますか。おんなのひと：うしろは にせんちくらい きってください。びようし：わかりました。しゃんぷーから はじめますね。",
+  "audioScriptVi": "Thợ tóc: Kính chào quý khách. Hôm nay quý khách muốn cắt kiểu như thế nào ạ? / Nữ: Hai bên tỉa ngắn một chút, còn tóc mái thì để ngang dưới lông mày giúp tôi nhé. / Thợ tóc: Vâng ạ. Còn độ dài phía sau gáy thì sao ạ? / Nữ: Phía sau cắt ngắn khoảng 2 cm giúp tôi. / Thợ tóc: Tôi hiểu rồi, chúng ta bắt đầu từ gội đầu nhé.",
+  "question": "後ろの 髪は 何センチ 切りますか。 (Phần tóc phía sau cắt đi mấy cm?)",
+  "options": [
+    "１センチ",
+    "２センチ",
+    "３センチ",
+    "５センチ"
+  ],
+  "correctIndex": 1,
+  "explanation": "Khách yêu cầu: \"後ろは ２センチくらい 切ってください\" (Phía sau cắt khoảng 2 cm)."
+},
+  {
+  "id": "lis-19",
+  "title": "Hội thoại 19: Mua đồ ăn nhanh tại McDonald's",
+  "situation": "Khách hàng gọi đồ ăn combo tại quầy bán đồ ăn nhanh.",
+  "audioScriptJa": "店員：ご注文を どうぞ。男の人：チーズバーガーセットを ひとつ ください。店員：お飲み物は 何に なさいますか。男の人：コーラで お願いします。店員：店内でお召し上がりですか、お持ち帰りですか。男の人：持ち帰りで お願いします。",
+  "audioScriptKana": "てんいん：ごちゅうもんを どうぞ。おとこのひと：ちーずばーがーせっとを ひとつ ください。てんいん：おのみものは なにに なさいますか。おとこのひと：こーらで おねがいします。てんいん：てんないでおめしあがりですか、おもちかえりですか。おとこのひと：もちかえりで おねがいします。",
+  "audioScriptVi": "Nhân viên: Xin mời quý khách gọi món. / Khách: Cho tôi 1 suất combo burger phô mai. / Nhân viên: Quý khách chọn đồ uống gì ạ? / Khách: Cho tôi nước Coca Cola. / Nhân viên: Quý khách dùng tại quán hay mang về ạ? / Khách: Cho tôi mang về nhé.",
+  "question": "男の人は どこで 食べますか。 (Người đàn ông sẽ ăn ở đâu?)",
+  "options": [
+    "店内で 食べます。",
+    "持ち帰って 外や 家で 食べます。",
+    "車で 食べます。",
+    "まだ 決めていません。"
+  ],
+  "correctIndex": 1,
+  "explanation": "Khách hàng chọn hình thức mang về: \"持ち帰りで お願いします\" (Cho tôi mang về)."
+},
+  {
+  "id": "lis-20",
+  "title": "Hội thoại 20: Rủ đồng nghiệp đi ăn mì sau giờ tan sở",
+  "situation": "Hai đồng nghiệp tan ca lúc 7 giờ tối và quyết định đi ăn tối cùng nhau.",
+  "audioScriptJa": "男の人：鈴木さん、仕事が 終わりましたね。お腹が 空きませんか。女の人：ええ、ぺこぺこです。何か 食べに 行きませんか。男の人：駅の 近くに 新しい ラーメン屋が できましたよ。行きましょうか。女の人：いいですね！ラーメン 大好きです。行きましょう！",
+  "audioScriptKana": "おとこのひと：すずきさん、しごとが おわりましたね。おなかが すきませんか。おんなのひと：ええ、ぺこぺこです。なにか たべに いきませんか。おとこのひと：えきの ちかくに あたらしい らーめんやが できましたよ。いきましょうか。おんなのひと：いいですね！らーめん だいすきです。いきましょう！",
+  "audioScriptVi": "Nam: Chị Suzuki ơi, việc xong rồi nhỉ. Chị có thấy đói bụng không? / Suzuki: Đói cồn cào rồi anh ơi. Đi kiếm gì ăn đi? / Nam: Gần ga mới mở quán mì ramen mới đấy. Mình qua đó ăn nhé? / Suzuki: Tuyệt quá! Em cực kỳ thích ăn ramen. Đi thôi nào!",
+  "question": "ふたりは 何を 食べに 行きますか。 (Hai người sẽ đi ăn món gì?)",
+  "options": [
+    "すし (Sushi)",
+    "ラーメン (Mì ramen)",
+    "カレー (Cà ri)",
+    "焼肉 (Thịt nướng)"
+  ],
+  "correctIndex": 1,
+  "explanation": "Hai người rủ nhau đi ăn mì ramen: \"新しい ラーメン屋が できましたよ。行きましょうか\"."
+},
+  {
+  "id": "lis-21",
+  "title": "Hội thoại 21: Hỏi vị trí nhà vệ sinh ở siêu thị Aeon Mall",
+  "situation": "Khách hàng hỏi nhân viên quầy thông tin vị trí phòng vệ sinh cho người khuyết tật/trẻ nhỏ.",
+  "audioScriptJa": "女の人：すみません、お手洗いは どこですか。店員：お手洗いは エスカレーターの 後ろに ございます。男の人用と 女の人用の 間に 多目的トイレも ございます。女の人：わかりました。ありがとうございます。",
+  "audioScriptKana": "おんなのひと：すみません、おてあらいは どこですか。てんいん：おてあらいは えすかれーたーの うしろに ございます。おとこのひとようと おんなのひとようの あいだに たもくてきといれも ございます。おんなのひと：わかりました。ありがとうございます。",
+  "audioScriptVi": "Nữ: Xin lỗi anh, nhà vệ sinh ở đâu ạ? / Nhân viên: Nhà vệ sinh nằm ở phía sau thang cuốn ạ. Ở giữa phòng nam và phòng nữ còn có cả nhà vệ sinh đa năng ạ. / Nữ: Tôi hiểu rồi. Cảm ơn anh.",
+  "question": "お手洗いは どこに ありますか。 (Nhà vệ sinh nằm ở đâu?)",
+  "options": [
+    "エレベーターの 中",
+    "エスカレーターの 後ろ",
+    "入口の すぐ 隣",
+    "２階の レストラン"
+  ],
+  "correctIndex": 1,
+  "explanation": "Nhân viên chỉ đường: \"エスカレーターの 後ろに ございます\" (Nằm ở phía sau thang cuốn)."
+},
+  {
+  "id": "lis-22",
+  "title": "Hội thoại 22: Dự báo thời tiết cuối tuần đi dã ngoại",
+  "situation": "Hai bạn trẻ bàn nhau xem có nên đi công viên ngắm hoa hay không dựa vào thời tiết.",
+  "audioScriptJa": "男の人：明日の 天気予報 見た？女の人：うん、午前中は 曇りだけど、午後から 雨が 降るらしいよ。男の人：じゃ、お花見は 日曜日に 変えようか。女の人：そうだね。日曜日は 朝から 晴れるって 言ってたよ。",
+  "audioScriptKana": "おとこのひと：あしたの てんきよほう みた？おんなのひと：うん、ごぜんちゅうは くもりだけど、ごごから あめが ふるらしいよ。おとこのひと：じゃ、おはなみは にちようびに かえようか。おんなのひと：そうだね。にちようびは あさから はれるって いってたよ。",
+  "audioScriptVi": "Nam: Cậu xem dự báo thời tiết ngày mai chưa? / Nữ: Xem rồi, buổi sáng thì âm u, còn chiều nghe bảo trời mưa đấy. / Nam: Thế dời lịch đi ngắm hoa sang Chủ nhật nhé? / Nữ: Ừ chuẩn đấy. Chủ nhật nghe bảo từ sáng trời đã nắng đẹp rồi.",
+  "question": "ふたりは いつ お花見に 行きますか。 (Hai người sẽ đi ngắm hoa vào hôm nào?)",
+  "options": [
+    "土曜日の 午前",
+    "土曜日の 午後",
+    "日曜日",
+    "来週の 月曜日"
+  ],
+  "correctIndex": 2,
+  "explanation": "Họ quyết định đổi sang Chủ nhật vì ngày mai mưa: \"お花見は 日曜日に 変えようか。日曜日は 朝から 晴れる\"."
+},
+  {
+  "id": "lis-23",
+  "title": "Hội thoại 23: Tìm đồ thất lạc (quên túi xách trên tàu)",
+  "situation": "Hành khách đến phòng quản lý đồ thất lạc của ga tàu điện.",
+  "audioScriptJa": "男の人：すみません。電車の中に かばんを 忘れてしまいました。駅員：どんな かばんでしたか。男の人：黒い 革の リュックで、中に パソコンと 青い 傘が 入っています。駅員：何時の 電車でしたか。男の人：山手線で、１５分前の 電車です。駅員：調べてみますので、こちらで 少々 お待ちください。",
+  "audioScriptKana": "おとこのひと：すみません。でんしゃのなかに かばんを わすれてしまいました。えきいん：どんな かばんでしたか。おとこのひと：くろい かわの りゅっくで、なかに ぱそこんと あおい かさが はいっています。えきいん：なんじの でんしゃでしたか。おとこのひと：やまのてせんで、じゅうごふんまえの でんしゃです。えきいん：しらべてみますので、こちらで しょうしょう おまちください。",
+  "audioScriptVi": "Khách: Xin lỗi anh, tôi lỡ bỏ quên chiếc túi trên tàu rồi. / Nhân viên: Chiếc túi trông như thế nào ạ? / Khách: Là ba lô da màu đen, bên trong có máy tính và cây dù màu xanh biển. / Nhân viên: Là chuyến tàu lúc mấy giờ vậy ạ? / Khách: Chuyến tàu tuyến Yamanote cách đây 15 phút ạ. / Nhân viên: Để tôi tra cứu ngay, xin anh đợi ở đây một chút ạ.",
+  "question": "かばんの 中に 何が 入っていますか。 (Trong ba lô có đựng những món đồ gì?)",
+  "options": [
+    "財布と 本",
+    "パソコンと 青い 傘",
+    "携帯と お金",
+    "洋服と 靴"
+  ],
+  "correctIndex": 1,
+  "explanation": "Khách khai báo rõ ràng: \"中に パソコンと 青い 傘が 入っています\" (Bên trong có máy vi tính và chiếc ô màu xanh biển)."
+},
+  {
+  "id": "lis-24",
+  "title": "Hội thoại 24: Mua quà lưu niệm bánh ngọt Tokyo Banana",
+  "situation": "Du khách chọn mua đặc sản bánh kẹo tại cửa hàng quà lưu niệm ga Tokyo.",
+  "audioScriptJa": "店員：いらっしゃいませ。東京土産の「東京ばな奈」はいかがでしょうか。女の人：賞味期限は どのくらいですか。店員：今日から ２週間でございます。女の人：じゃ、８個入りの 箱を ３つ ください。店員：プレゼント用の 小分けの 袋は お付けしますか。女の人：はい、３枚 お願いします。",
+  "audioScriptKana": "てんいん：いらっしゃいませ。とうきょうみやげの「とうきょうばなな」はいかがでしょうか。おんなのひと：しょうみきげんは どのくらいですか。てんいん：きょうから にしゅうかんでございます。おんなのひと：じゃ、はっこいりの はこを みっつ ください。てんいん：ぷれぜんとようの こわけの ふくろは おつけしますか。おんなのひと：はい、さんまい おねがいします。",
+  "audioScriptVi": "Nhân viên: Kính chào quý khách. Món bánh đặc sản Tokyo Banana làm quà rất hợp đấy ạ. / Nữ: Hạn sử dụng được bao lâu vậy em? / Nhân viên: Dạ được 2 tuần kể từ hôm nay ạ. / Nữ: Vậy lấy cho chị 3 hộp loại 8 chiếc nhé. / Nhân viên: Chị có cần thêm túi nilon nhỏ để chia tặng quà không ạ? / Nữ: Có, cho chị xin 3 chiếc túi nhé.",
+  "question": "女の人は 何箱 買いましたか。 (Người phụ nữ đã mua bao nhiêu hộp?)",
+  "options": [
+    "１箱 (1 hộp)",
+    "２箱 (2 hộp)",
+    "３箱 (3 hộp)",
+    "８箱 (8 hộp)"
+  ],
+  "correctIndex": 2,
+  "explanation": "Người phụ nữ nói: \"８個入りの 箱を ３つ ください\" (Cho tôi 3 hộp loại 8 cái)."
+},
+  {
+  "id": "lis-25",
+  "title": "Hội thoại 25: Mua thuốc đau đầu tại hiệu thuốc MatsuKiyo",
+  "situation": "Khách hàng mua thuốc giảm đau không cần kê đơn tại cửa hàng Matsumoto Kiyoshi.",
+  "audioScriptJa": "男の人：すみません。頭が 痛いので、薬が 欲しいんですが。薬剤師：熱は ありますか。男の人：いいえ、熱は ありません。頭だけ 痛いです。薬剤師：では、こちらの 鎮痛薬が おすすめです。１回 ２錠、食後に 水で 飲んでください。男の人：眠くなりますか。薬剤師：この 薬は 眠くなりませんよ。ご安心ください。",
+  "audioScriptKana": "おとこのひと：すみません。あたまが いたいので、くすりが ほしいんですが。やくざいし：ねつは ありますか。おとこのひと：いいえ、ねつは ありません。あたまだけ いたいです。やくざいし：では、こちらの ちんつうやくが おすすめです。いっかい にじょう、しょくごに みずで のんでください。おとこのひと：ねむくなりますか。やくざいし：この くすりは ねむくなりませんよ。ごあんしんください。",
+  "audioScriptVi": "Khách: Xin lỗi anh, tôi bị đau đầu nên muốn mua thuốc ạ. / Dược sĩ: Bạn có bị sốt không? / Khách: Dạ không, tôi không sốt, chỉ bị nhức đầu thôi. / Dược sĩ: Thế thì tôi khuyên dùng loại thuốc giảm đau này nhé. Mỗi lần uống 2 viên cùng nước lọc sau bữa ăn. / Khách: Thuốc này có gây buồn ngủ không anh? / Dược sĩ: Loại thuốc này không gây buồn ngủ đâu bạn nhé. Bạn yên tâm.",
+  "question": "薬は １回に 何錠 飲みますか。 (Mỗi lần uống mấy viên thuốc?)",
+  "options": [
+    "１錠 (1 viên)",
+    "２錠 (2 viên)",
+    "３錠 (3 viên)",
+    "４錠 (4 viên)"
+  ],
+  "correctIndex": 1,
+  "explanation": "Dược sĩ hướng dẫn cách uống: \"１回 ２錠、食後に 水で 飲んでください\" (Mỗi lần 2 viên sau ăn)."
+},
+  {
+  "id": "lis-26",
+  "title": "Hội thoại 26: Gọi điện báo đến muộn do kẹt xe",
+  "situation": "Người đi làm gọi điện báo cho đồng nghiệp vì bị kẹt xe trên đường đến cuộc họp.",
+  "audioScriptJa": "男の人：もしもし、林さん。田中です。すみません、事故で 電車が 止まってしまいました。女の人：えっ、大丈夫ですか。今 どこに いますか。男の人：新宿駅です。あと ２０分くらい 遅れそうです。女の人：わかりました。課長に 伝えておきますから、気をつけて 来てくださいね。男の人：ありがとうございます。本当に すみません。",
+  "audioScriptKana": "おとこのひと：もしもし、はやしさん。たなかです。すみません、じこで でんしゃが とまってしまいました。おんなのひと：えっ、だいじょうぶですか。いま どこに いますか。おとこのひと：しんじゅくえきです。あと にじゅっぷんくらい おくれそうです。おんなのひと：わかりました。かちょうに つたえておきますから、きをつけて きてくださいね。おとこのひと：ありがとうございます。ほんとうに すみません。",
+  "audioScriptVi": "Tanaka: Alô chị Hayashi à, Tanaka đây ạ. Xin lỗi chị, vì tai nạn nên tàu điện bị dừng mất rồi. / Hayashi: Ôi thế à, cậu không sao chứ? Hiện giờ cậu đang ở đâu? / Tanaka: Em đang ở ga Shinjuku. Chắc em đến muộn khoảng 20 phút nữa ạ. / Hayashi: Chị hiểu rồi, để chị báo lại với trưởng phòng, cậu cứ bình tĩnh cẩn thận đi nhé. / Tanaka: Em cảm ơn chị, em xin lỗi nhiều ạ.",
+  "question": "田中さんは なぜ 遅れますか。 (Tại sao anh Tanaka lại bị muộn?)",
+  "options": [
+    "寝坊しました (Ngủ quên)",
+    "事故で 電車が 止まりました (Tàu dừng vì tai nạn)",
+    "道に 迷いました (Lạc đường)",
+    "病院へ 行きました (Đi bệnh viện)"
+  ],
+  "correctIndex": 1,
+  "explanation": "Tanaka giải thích nguyên nhân: \"事故で 電車が 止まってしまいました\" (Vì có sự cố tai nạn nên tàu điện đã dừng lại)."
+},
+  {
+  "id": "lis-27",
+  "title": "Hội thoại 27: Đổi tiền đô la sang Yên tại ngân hàng",
+  "situation": "Du khách đổi 500 USD sang đồng Yên Nhật tại quầy giao dịch ngân hàng.",
+  "audioScriptJa": "銀行員：いらっしゃいませ。今日は どのような ご用件でしょうか。女の人：アメリカドルを 日本円に 両替したいのですが。銀行員：かしこまりました。おいくら 両替されますか。女の人：５００ドルです。銀行員：こちらの 用紙に お名前と ご住所を ご記入の上、パスポートを 見せてください。女の人：はい、どうぞ。",
+  "audioScriptKana": "ぎんこういん：いらっしゃいませ。きょうは どのような ごようけんしょうか。おんなのひと：あめりかどるを にほんえんに りょうがえしたいのですが。ぎんこういん：かしこまりました。おいくら りょうがえされますか。おんなのひと：ごひゃくどるです。ぎんこういん：こちらの ようしに おなまえと ごじゅうしょを ごきにゅうのうえ、ぱすぽーとを みせてください。おんなのひと：はい、どうぞ。",
+  "audioScriptVi": "Nhân viên: Kính chào quý khách. Hôm nay chúng tôi có thể hỗ trợ gì cho quý khách ạ? / Nữ: Tôi muốn đổi đô la Mỹ sang đồng Yên Nhật ạ. / Nhân viên: Vâng ạ. Quý khách muốn đổi bao nhiêu ạ? / Nữ: 500 đô la Mỹ. / Nhân viên: Xin mời quý khách điền họ tên và địa chỉ vào phiếu này, đồng thời xuất trình hộ chiếu giúp tôi ạ. / Nữ: Vâng, gửi anh nhé.",
+  "question": "女の人は いくら 両替しますか。 (Người phụ nữ muốn đổi bao nhiêu tiền?)",
+  "options": [
+    "１００ドル (100 USD)",
+    "３００ドル (300 USD)",
+    "５００ドル (500 USD)",
+    "１０００ドル (1000 USD)"
+  ],
+  "correctIndex": 2,
+  "explanation": "Khách nói rõ ràng số tiền: \"５００ドル (ごひゃくどる) です\"."
+},
+  {
+  "id": "lis-28",
+  "title": "Hội thoại 28: Hỏi cách đi ra sân bay Narita nhanh nhất",
+  "situation": "Hành khách hỏi thông tin tại quầy Information ga Tokyo.",
+  "audioScriptJa": "男の人：すみません。成田空港まで いちばん 早く 行くには どうすれば いいですか。案内係：成田エクスプレスが いちばん 早いです。乗り換えなしで、約１時間で 着きますよ。男の人：普通の 電車だと どのくらい かかりますか。案内係：普通の 電車だと 乗り換えが １回 あって、１時間半くらい かかりますね。男の人：わかりました。成田エクスプレスの 切符を 買います。",
+  "audioScriptKana": "おとこのひと：すみません。なりたくうこうまで いちばん はやく いくには どうすれば いいですか。あんないがかり：なりたえくすぷれすが いちばん はやいです。のりかえなしで、やくいちじかんで つきますよ。おとこのひと：ふつうの でんしゃだと どのくらい かかりますか。あんないがかり：ふつうの でんしゃだと のりかえが いっかい あって、いちじかんはんくらい かかりますね。おとこのひと：わかりました。なりたえくすぷれすの きっぷを かいます。",
+  "audioScriptVi": "Khách: Xin lỗi anh, để đi đến sân bay Narita nhanh nhất thì nên đi thế nào ạ? / Hướng dẫn viên: Tàu Narita Express là nhanh nhất ạ. Đi thẳng không cần đổi tàu, mất tầm 1 tiếng là đến nơi. / Khách: Nếu đi tàu thường thì mất khoảng bao lâu ạ? / Hướng dẫn viên: Tàu thường thì phải đổi tàu 1 lần và mất khoảng 1 tiếng rưỡi ạ. / Khách: Tôi hiểu rồi, tôi sẽ mua vé Narita Express.",
+  "question": "成田エクスプレスで 空港まで どのくらい かかりますか。 (Đi Narita Express đến sân bay mất bao lâu?)",
+  "options": [
+    "約３０分",
+    "約１時間",
+    "約１時間半",
+    "約２時間"
+  ],
+  "correctIndex": 1,
+  "explanation": "Nhân viên giải thích: \"成田エクスプレスが いちばん 早いです。乗り換えなしで、約１時間で 着きますよ\"."
+},
+  {
+  "id": "lis-29",
+  "title": "Hội thoại 29: Gọi tính tiền tại quán nhậu Izakaya",
+  "situation": "Nhóm bạn ăn uống xong và gọi phục vụ quán để thanh toán hóa đơn.",
+  "audioScriptJa": "男の人：すみません、お会計を お願いします。店員：はい、テーブルで お伺いいたします。全部で ８４００円になります。男の人：別々で 払えますか。店員：申し訳ございません、お会計は ご一緒で お願いしております。男の人：わかりました。じゃ、カードで 払います。",
+  "audioScriptKana": "おとこのひと：すみません、おかいけいを おねがいします。てんいん：はい、てーぶるで おうかがいいたします。ぜんぶで はっせんよんひゃくえんになります。おとこのひと：べつべつで はらえますか。てんいん：もうしわけございません、おかいけいは ごいっしょで おねがいしております。おとこのひと：わかりました。じゃ、かーどで はらいます。",
+  "audioScriptVi": "Khách: Em ơi, cho anh xin tính tiền nhé! / Phục vụ: Dạ vâng, em xin phép thanh toán tại bàn ạ. Tất cả của bàn mình hết 8400 Yên ạ. / Khách: Bọn anh thanh toán riêng từng người được không em? / Phục vụ: Dạ xin lỗi anh, quán em chỉ nhận thanh toán gộp một lần thôi ạ. / Khách: Được rồi, vậy anh trả thẻ nhé.",
+  "question": "お会計は 全部で いくらですか。 (Tổng tiền thanh toán là bao nhiêu?)",
+  "options": [
+    "４８００円",
+    "７４００円",
+    "８４００円",
+    "９４００円"
+  ],
+  "correctIndex": 2,
+  "explanation": "Nhân viên đọc rõ tổng tiền: \"全部で ８４００円 (はっせんよんひゃくえん) になります\"."
+},
+  {
+  "id": "lis-30",
+  "title": "Hội thoại 30: Chúc mừng và tạm biệt bạn về nước",
+  "situation": "Buổi tiệc chia tay một người bạn du học sinh hoàn thành khóa học trở về Việt Nam.",
+  "audioScriptJa": "女の人：ナムさん、いよいよ 明日 帰国ですね。日本での １年間は どうでしたか。男の人：あっという間でしたが、本当に 楽しかったです。先生や 友達の おかげです。女の人：国へ 帰っても、日本語の 勉強を 続けてくださいね。男の人：はい！ベトナムで 日本の 会社に 就職したいです。女の人：頑張って！応援していますよ。元気でね！",
+  "audioScriptKana": "おんなのひと：なむさん、いよいよ あした きこくですね。にほんでの いちねんかんは どうでしたか。おとこのひと：あっというまでしたが、ほんとうに たのしかったです。せんせいや ともだちの おかげです。おんなのひと：くにへ かえっても、にほんごの べんきょうを つづけてくださいね。おとこのひと：はい！べとなむで にほんの かいしゃに しゅうしょくしたいです。おんなのひと：がんばって！おうえんしていますよ。げんきでね！",
+  "audioScriptVi": "Nữ: Nam ơi, vậy là ngày mai cậu về nước rồi nhỉ. Một năm ở Nhật Bản cậu thấy thế nào? / Nam: Thời gian trôi nhanh như chớp mắt nhưng mình thật sự rất vui. Tất cả là nhờ có thầy cô và bạn bè giúp đỡ. / Nữ: Về nước rồi cậu vẫn nhớ tiếp tục học tiếng Nhật nhé. / Nam: Chắc chắn rồi! Mình muốn xin vào làm việc tại công ty Nhật ở Việt Nam. / Nữ: Cố lên nhé! Tụi mình luôn ủng hộ cậu. Giữ gìn sức khỏe nhé!",
+  "question": "ナムさんは ベトナムで 何を したいですか。 (Bạn Nam muốn làm gì tại Việt Nam?)",
+  "options": [
+    "旅行会社を 作りたい",
+    "日本の 会社に 就職したい",
+    "大学院に 行きたい",
+    "日本語学校の 先生に なりたい"
+  ],
+  "correctIndex": 1,
+  "explanation": "Nam chia sẻ dự định: \"ベトナムで 日本の 会社に 就職したいです\" (Tôi muốn xin vào làm việc ở công ty Nhật tại Việt Nam)."
+}
 ];

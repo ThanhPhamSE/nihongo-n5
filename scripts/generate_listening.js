@@ -167,3 +167,4 @@ export const LISTENING_LESSONS: ListeningDialogue[] = ${JSON.stringify(LISTENING
 
 fs.writeFileSync(outputFile, fileContent);
 console.log('Successfully wrote ' + LISTENING_LESSONS.length + ' listening lessons to listening.ts');
+

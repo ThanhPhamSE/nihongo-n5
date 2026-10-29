@@ -46,3 +46,4 @@ const newEntries = KANJI_BATCH2.map(k => JSON.stringify(k, null, 2)).join(',\n  
 content += ',\n  // === Mở rộng từ phiên làm việc 3 (Bộ Kanji đầy đủ chuẩn N5) ===\n  ' + newEntries + '\n];\n';
 fs.writeFileSync(kanjiFile, content);
 console.log('Added ' + KANJI_BATCH2.length + ' more Kanji entries. Target 100+ Kanji reached!');
+
